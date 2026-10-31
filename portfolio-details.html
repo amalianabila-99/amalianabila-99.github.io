@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Detail - Nabila Hidayatul Amalia, S.Tr.Ab.</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Vendors -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            slate: {
+              850: '#131e32',
+              900: '#0f172a',
+            },
+            amberAccent: {
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'fade-in': 'fadeIn 0.4s ease-out forwards',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: 0, transform: 'translateY(16px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #ffffff;
+      color: #334155;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* Glass Navbar */
+    .glass-navbar {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+    }
+
+    /* Custom Scrollbar Thumbnail */
+    .thumb-scroll::-webkit-scrollbar {
+      height: 5px;
+    }
+    .thumb-scroll::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .thumb-scroll::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .thumb-scroll::-webkit-scrollbar-thumb:hover {
+      background: #2563eb;
+    }
+
+    /* Clean Accordion Details */
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-700 min-h-screen flex flex-col justify-between selection:bg-brand-600 selection:text-white">
+
+  <!-- HEADER NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <a href="index.html#portfolio" class="flex items-center gap-2.5 group text-decoration-none">
+        <div class="w-9 h-9 rounded-xl bg-slate-900 text-white flex items-center justify-center font-extrabold text-sm shadow-sm group-hover:bg-brand-600 transition-colors">
+          NHA
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-slate-900 text-xs sm:text-sm tracking-tight group-hover:text-brand-600 transition-colors">Nabila Hidayatul Amalia</span>
+          <span class="text-[10px] text-amberAccent-600 font-bold uppercase tracking-wider">Business Administration</span>
+        </div>
+      </a>
+      
+      <nav class="text-xs text-slate-500 font-semibold flex items-center gap-1.5">
+        <a href="index.html" class="hover:text-brand-600 transition">Home</a> 
+        <span class="text-slate-300">/</span> 
+        <a href="index.html#portfolio" class="hover:text-brand-600 transition">Portfolio</a> 
+        <span class="text-slate-300">/</span> 
+        <span class="text-slate-900 font-bold" id="nav-project-title">Project Detail</span>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER WITH FADE-IN ANIMATION -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 w-full animate-fade-in-up">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
+      
+      <!-- KOLOM KIRI: FOTO UTAMA & THUMBNAIL GALERI -->
+      <div class="lg:col-span-6 space-y-4">
+        
+        <!-- Frame Utama Gambar Proyek (Bisa Diklik untuk Membuka Popup) -->
+        <div class="relative overflow-hidden rounded-2xl bg-slate-900 aspect-[4/3] group shadow-sm border border-slate-100 cursor-pointer" onclick="openImageModal()">
+          <img id="detail-main-img" src="" alt="Project Detail" class="w-full h-full object-cover transition-all duration-500 animate-fade-in hover:scale-105">
+          
+          <!-- Indikator Hint "Klik untuk memperbesar" -->
+          <div class="absolute bottom-3 right-3 bg-slate-900/70 backdrop-blur-md text-white text-[10px] px-2.5 py-1 rounded-full flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+            <i class="bi bi-zoom-in"></i> Select the image to view
+          </div>
+
+          <!-- Tombol Navigasi Gambar (Prev & Next) -->
+          <button id="btn-prev-img" type="button" aria-label="Previous Photo" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-white/90 hover:bg-white text-slate-800 rounded-full flex items-center justify-center shadow-md transition active:scale-90 z-10" onclick="event.stopPropagation(); prevImage(); resetAutoSlide();">
+            <i class="bi bi-chevron-left text-sm"></i>
+          </button>
+          <button id="btn-next-img" type="button" aria-label="Next Photo" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-white/90 hover:bg-white text-slate-800 rounded-full flex items-center justify-center shadow-md transition active:scale-90 z-10" onclick="event.stopPropagation(); nextImage(); resetAutoSlide();">
+            <i class="bi bi-chevron-right text-sm"></i>
+          </button>
+        </div>
+
+        <!-- Scrollable Thumbnail Bar -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <p class="text-[11px] font-extrabold text-slate-400 uppercase tracking-wider">Photo Gallery (<span id="photo-count">0</span> Photos)</p>
+          </div>
+          <div id="detail-thumbnails" class="flex gap-2.5 overflow-x-auto pb-2 thumb-scroll">
+            <!-- Diisi otomatis melalui JavaScript -->
+          </div>
+        </div>
+
+        <!-- Tags / Competency Matrix -->
+        <div class="pt-2">
+          <div id="detail-tags" class="flex flex-wrap gap-2">
+            <!-- Diisi otomatis melalui JavaScript -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- KOLOM KANAN: INFORMASI KONTEN -->
+      <div class="lg:col-span-6 flex flex-col justify-between h-full">
+        <div>
+          
+          <!-- Header Meta Info -->
+          <div class="flex items-center justify-between gap-3 text-xs text-slate-400 mb-4 flex-wrap">
+            <span id="detail-category" class="px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-600 font-extrabold text-xs"></span>
+            <div class="flex items-center gap-4 font-semibold">
+              <span><i class="bi bi-buildings me-1.5 text-brand-600"></i> <span id="detail-client" class="text-slate-700 font-bold"></span></span>
+            </div>
+          </div>
+
+          <!-- Judul Utama Proyek -->
+          <h1 id="detail-title" class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3 leading-tight font-display"></h1>
+          
+          <!-- External Link -->
+          <div id="container-link" class="mb-6" style="display: none;">
+            <a id="detail-link" href="#" target="_blank" class="text-xs sm:text-sm text-brand-600 font-bold hover:underline inline-flex items-center gap-1.5">
+              <i class="bi bi-link-45deg text-lg"></i> <span id="detail-link-text"></span>
+            </a>
+          </div>
+
+          <!-- Deskripsi Paragraf Singkat -->
+          <p id="detail-desc" class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-8 font-normal text-justify"></p>
+
+          <!-- Accordion Clean Style dengan Text Justify -->
+          <div class="space-y-4 mb-8">
+            
+            <!-- Project Overview -->
+            <details class="group py-2.5 border-b border-slate-100" open>
+              <summary class="flex justify-between items-center cursor-pointer font-extrabold text-sm sm:text-base text-slate-900 list-none py-1">
+                <span class="flex items-center gap-2.5 font-extrabold">
+                  <i class="bi bi-clipboard-data text-brand-600"></i> Project Overview
+                </span>
+                <span class="transition-transform group-open:rotate-180 text-slate-400 text-xs">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </summary>
+              <p id="detail-overview" class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed pl-7 font-medium whitespace-pre-line text-justify"></p>
+            </details>
+
+            <!-- The Challenge -->
+            <details class="group py-2.5 border-b border-slate-100">
+              <summary class="flex justify-between items-center cursor-pointer font-extrabold text-sm sm:text-base text-slate-900 list-none py-1">
+                <span class="flex items-center gap-2.5 font-extrabold">
+                  <i class="bi bi-exclamation-diamond text-brand-600"></i> The Challenge
+                </span>
+                <span class="transition-transform group-open:rotate-180 text-slate-400 text-xs">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </summary>
+              <p id="detail-challenge" class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed pl-7 font-medium whitespace-pre-line text-justify"></p>
+            </details>
+
+            <!-- Role & Responsibility -->
+            <details class="group py-2.5 border-b border-slate-100">
+              <summary class="flex justify-between items-center cursor-pointer font-extrabold text-sm sm:text-base text-slate-900 list-none py-1">
+                <span class="flex items-center gap-2.5 font-extrabold">
+                  <i class="bi bi-person-workspace text-brand-600"></i> Role & Responsibility
+                </span>
+                <span class="transition-transform group-open:rotate-180 text-slate-400 text-xs">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </summary>
+              <p id="detail-role" class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed pl-7 font-medium whitespace-pre-line text-justify"></p>
+            </details>
+
+          </div>
+
+          <!-- Key Features -->
+          <div class="mb-8">
+            <h3 class="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-3.5 flex items-center gap-1.5">
+              <i class="bi bi-stars text-amberAccent-600"></i> Key Features
+            </h3>
+            <ul id="detail-features" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm font-semibold text-slate-700">
+              <!-- Diisi otomatis melalui JavaScript -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Action Button (Back to Portfolio Only) -->
+        <div class="pt-4 border-t border-slate-100">
+          <a href="index.html#portfolio" class="w-full px-6 py-3 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xs transition active:scale-95 text-center flex items-center justify-center gap-2">
+            <i class="bi bi-arrow-left text-xs"></i> <span>Back to Portfolio</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL POPUP LIGHTBOX DENGAN TOMBOL NAVIGASI SLIDER -->
+  <div id="image-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4 animate-fade-in" onclick="closeImageModal()">
+    <div class="relative max-w-5xl max-h-[90vh] w-full flex items-center justify-center" onclick="event.stopPropagation()">
+      
+      <!-- Tombol Close Modal -->
+      <button type="button" onclick="closeImageModal()" class="absolute -top-12 right-0 text-white hover:text-amberAccent-500 text-3xl font-bold transition z-20">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <!-- Tombol Panah Kiri di Modal -->
+      <button type="button" onclick="prevImage(); updateModalImage();" class="absolute left-2 sm:-left-12 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/20 hover:bg-white/40 text-white rounded-full flex items-center justify-center text-xl transition z-20">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <!-- Gambar Modal -->
+      <img id="modal-img" src="" alt="Popup Preview" class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl transition-all duration-300">
+
+      <!-- Tombol Panah Kanan di Modal -->
+      <button type="button" onclick="nextImage(); updateModalImage();" class="absolute right-2 sm:-right-12 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/20 hover:bg-white/40 text-white rounded-full flex items-center justify-center text-xl transition z-20">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-500 py-6 border-t border-slate-900 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div>
+        <strong class="text-slate-300 font-bold">Nabila Hidayatul Amalia</strong> • Portfolio
+      </div>
+      <p>© 2026</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    const portfolioDatabase = {
+      "1": {
+        title: "Re-Branding Kartini Milkfish Products",
+        category: "Digital Branding ",
+        client: "P2MD Bonto Manai Village",
+        link: "", 
+        gallery: [
+          "assets/img/work/p3.webp",
+          "assets/img/work/p1.webp",
+          "assets/img/work/p2.webp",
+          "assets/img/work/p4.webp",
+          "assets/img/work/p21.webp",
+          "assets/img/work/p22.webp",
+          "assets/img/work/p23.webp",
+          "assets/img/work/p24.webp",
+          "assets/img/work/p25.webp",
+          "assets/img/work/p5.webp",
+        ],
+        tags: ["Leadership", "Packaging Redesign", "UMKM Innovation", "SMM Campaign", "Canva"],
+        overview: "Amidst the vast fishponds of Bonto Manai Village, South Sulawesi, the majority of the population relies on fishing as their primary livelihood—a profession often met with unpredictable yields and unstable incomes.\n\nRecognizing the immense, underutilized potential of local milkfish, the Agribusiness Student Association (HIMAGRI) team from the State Agricultural Polytechnic of Pangkep stepped in with a mission of direct impact through the Village Community Empowerment Program (P2MD), funded by the Ministry of Education, Culture, Research, and Technology.\n\nThrough this initiative, we collaborated closely with Sikamaseang MSMEs to transform local challenges into sustainable opportunities. Our core mission focused on product diversification—turning raw, low-value milkfish into high-value processed goods, specifically Milkfish Floss (Abon Ikan). Beyond production, we empowered the community by strengthening their marketing strategies, elevating product branding, and unlocking broader market access to help the local economy thrive independently and sustainably.",
+        challenge: "The majority of the population relied heavily on traditional fishing, a profession highly vulnerable to unpredictable sea yields and resulting in unstable household incomes. Yet, the region's potential was immense—approximately 400 hectares of fishponds in Binangatoa held extraordinary fishery potential. Unfortunately, this resource remained largely underutilized, where raw milkfish were commonly sold fresh in bulk at remarkably low prices (ranging from IDR 5,000 to IDR 9,000 per fish).\n\nThis issue was further compounded by a lack of product innovation, an absence of commercial-standard packaging, and marketing access that was restricted to conventional offline methods within village boundaries. This exact challenge became the catalyst for transformation, driving us to engineer real solutions to elevate local products and break into wider markets.",
+        role: "• Re-Branding & Packaging Design: Redesigned logos and attractive standing pouch packaging stickers using tools like Canva for 'Abon Ikan Kartini'.\n\n• Training & Education: Conducted workshops on creative industry marketing strategies, product innovation, digital content creation, and social media promotion.\n\n• Strategic Partnerships: Established partnerships with the Village-Owned Enterprise (BUMDes) for financial access/capital support, and initiated market expansion discussions with modern retailers.",
+        features: [
+          "Boosted MSME Revenue up to +45%",
+          "Product Packaging Label Redesign",
+          "Fishermen Digital Marketing Training",
+          "Local BUMDes Distribution Partnership"
+        ]
+      },
+      "2": {
+        title: "Insight on Ngalup / Ion Corner (9 Editions)",
+        category: "Event Management and Operations",
+        client: "Ngalup.co",
+        link: "", 
+        gallery: [
+          "assets/img/portfolio/ion.webp",
+          "assets/img/work/ng1.webp",
+          "assets/img/work/ng4.webp",
+          "assets/img/portfolio/ion1.webp",
+          "assets/img/portfolio/ion2.webp",
+          "assets/img/portfolio/ion3.webp",
+          "assets/img/portfolio/ion4.webp",
+          "assets/img/portfolio/ion5.webp",
+        ],
+        tags: ["Event Coordinator", "Host/MC", "OBS Studio", "Sendy Email Marketing"],
+        overview: "In a fast-paced digital era, access to practical insights from industry experts is paramount for the career growth of young professionals. To address this need, ION (Insight On Ngalup) was established as a flagship monthly online talkshow and community event initiated by the Ngalup Collaborative Network, crafted to empower young minds through high-impact expert panel discussions across 9 distinct editions designed to help young professionals develop industry skills.",
+        challenge: "One of the most significant operational hurdles on the ground was sourcing and securing industry experts willing to speak on a pro bono basis. With zero financial compensation, the core strategy relied on offering high-value alternatives, specifically personal branding and social media profiling across Ngalup's networks.",
+        role: "• Project Planning & Speaker Curation: Spearheaded project planning, drafted Terms of Reference (TOR), and managed professional speaker sourcing and outreach.\n\n• Digital Marketing & Automation: Executed targeted digital marketing campaigns by setting up Sendy auto-reply systems, conducting WhatsApp blasts, and managing post-event email marketing.\n\n• Live Broadcast Production & Hosting: Handled live broadcast production via OBS Studio and Zoom, prepared comprehensive Cue Cards and Master Host Decks, and drove the sessions as the official Event Host (MC).",
+        features: [
+          "TOR & Master Host Deck Preparation",
+          "Live Broadcasting via OBS Studio & Zoom",
+          "Sendy Automated Email Configuration",
+          "Participant E-Certificate Distribution"
+        ]
+      },
+      "3": {
+        title: "Empower Academy – Bentoel Group x Ngalup.co",
+        category: "Administrative Support",
+        client: "Bangun Bangsa (Bentoel Group) x Ngalup.co",
+        link: "",
+        gallery: [
+          "assets/img/portfolio/emp.webp",
+          "assets/img/portfolio/emp1.webp",
+          "assets/img/portfolio/emp2.webp",
+          "assets/img/portfolio/emp3.webp",
+          "assets/img/portfolio/emp4.webp",
+        ],
+        tags: ["Business Incubation", "Stakeholder Relation", "Data Archiving", "Asset Support"],
+        overview: "An inclusive business incubation program initiated by Bangun Bangsa in collaboration with Ngalup.co. The program is designed to support people with disabilities and marginalized communities in Greater Malang by elevating their business skills, digital literacy, and financial independence",
+        challenge: "Navigating remote support limitations due to on-site age restrictions by maximizing high-impact contributions behind the scenes. This involved driving backend administration, preparing foundational documentation prior to the program's launch, and systematically organizing participant digital assets before the training commenced.",
+        role: "• Administrative & Digital Support: Drafted and distributed official kick-off invitations for keynote speakers and mentors.\n\n• Cloud Folder Structuring: Designed structured cloud task folders for participants across both business and pre-business categories.\n\n• Asset Management: Organized and categorized product packaging design assets based on custom MSME preferences.",
+        features: [
+          "Stakeholder Invitation Distribution",
+          "Incubation Task Folder Structuring",
+          "MSME Packaging Design Archiving"
+        ]
+      },
+      "4": {
+        title: "MBKM Student Entrepreneurship – JTI POLINEMA",
+        category: "Event Management and Operations",
+        client: "JTI Polinema x Ngalup.co",
+        link: "",
+        gallery: [
+          "assets/img/work/ng3.webp",
+          "assets/img/work/work5.webp",
+          "assets/img/work/work6.webp",
+          "assets/img/work/work1.webp",
+          "assets/img/work/ng2.webp",
+          "assets/img/work/work4.webp"
+        ],
+        tags: ["On-Site MC", "Technical Operator", "Attendance Monitoring"],
+        overview: "A youth entrepreneurship empowerment and mentoring program tailored to increase the national entrepreneurship ratio toward the vision of Golden Indonesia 2045. This strategic initiative serves as a collaborative program between the Information Technology Department (JTI) of POLINEMA and Ngalup.co. Driven by a clear mission to empower young tech talents, the program focuses on transforming innovative business ideas into viable enterprises to boost national entrepreneurship metrics.",
+        challenge: "Maintaining high operational precision in the field during intensive training sessions. The core hurdles involved conducting meticulous pre-event equipment checks such as verifying camera storage readiness to prevent technical glitches as well as overseeing accurate participant attendance updates and producing comprehensive post-event documentation across every training session.",
+        role: "• On-Site Operations & Administration: Served directly on-site as the technical broadcast operator, documentation lead, and Master of Ceremony (MC).\n\n• Attendance Monitoring: Managed participant attendance tracking systems and provided continuous updates throughout training sessions.\n\n• Documentation: Updated master host decks and archived comprehensive training documentation post-event.",
+        features: [
+          "On-Site Event Execution & MC",
+          "Daily Participant Attendance Tracking",
+          "Master Host Deck Regular Updates"
+        ]
+      },
+      "5": {
+        title: "Practiclass – Ngalup.co x Jagoan Hosting",
+        category: "Administrative Support",
+        client: "Jagoan Hosting x Ngalup.co",
+        link: "",
+        gallery: [
+          "assets/img/portfolio/pr.webp",
+          "assets/img/portfolio/riset.webp",
+        ],
+        tags: ["Market Mining", "TOR Drafting", "Event Execution"],
+        overview: "Initiated by Ngalup in collaboration with Jagoan Hosting, Practiclass was established as an e-course model bridging classroom theory with hands-on practice for vocational students, educators, and professionals seeking to upgrade their IT skills particularly in cybersecurity. The program aims to empower students in preparing for an early-entry professional career or competing in arenas like the LKS.",
+        challenge: "• Data Scarcity: Severe lack of publicly consolidated records regarding LKS competition winners from 2020 to 2024 across four major Indonesian provinces.\n\n• Research Burden: Requiring meticulous alternative data mining across digital channels like YouTube and Twitter.",
+        role: "• Research & Preparation Workflow: Conducted deep-dive data research across alternative platforms to map out LKS winners (2020–2024) across East, West, Central Java, and Yogyakarta.\n\n• TOR Drafting: Drafted comprehensive Terms of Reference (TOR) for ToT Quantum Teaching sessions.\n\n• Asset Preparation: Prepared all technical meeting (TM) administrative assets, Master Decks, and Cue Cards.",
+        features: [
+          "Deep-Dive Competitor & LKS Research",
+          "Technical Meeting & ToT TOR Drafting",
+          "Cue Cards & Master Deck Preparation"
+        ]
+      },
+      "6": {
+        title: "Startup4industry – Roiloka x Mebiso",
+        category: "EEvent Management and Operations",
+        client: "Mebiso x Roiloka",
+        link: "",
+        gallery: [
+          "assets/img/portfolio/rol3.webp",
+          "assets/img/portfolio/rol11.webp",
+          "assets/img/portfolio/rol2.webp",
+          "assets/img/portfolio/rol3.webp",
+          "assets/img/portfolio/rol1.webp",
+          "assets/img/portfolio/rol4.webp"
+        ],
+        tags: ["GSM Deck", "Video Production", "Event MC"],
+        overview: "A strategic competition and facilitation program initiated by the Ministry of Industry of the Republic of Indonesia to bridge tech startups with industrial stakeholders. Through this initiative, Mebiso established a strategic collaboration with Roiloka, successfully driving a remarkable surge in online retail sales alongside a significant boost in social engagement.",
+        challenge: "Managing a dual role as the Master of Ceremony (MC) and operational lead for Roiloka Goes to Beon. The core hurdles involved crafting precise cue cards to seamlessly guide the flow of the event, alongside rapidly adapting presentation decks under tight time pressure to ensure flawless stage communication.",
+        role: "• Complete the Grafik Standard Manual (GSM) deck for Roiloka.\n\n•  Designed registration Google Forms and custom headers for Roiloka workshops.\n\n•  Produced knowledge-sharing bumper videos, drafted event cue cards, and acted as the on-site MC for Roiloka Goes to BEON.",
+        features: [
+          "GSM Deck & Content Plan Updates",
+          "Knowledge Sharing Bumper Video Production",
+          "Workshop MC for Roiloka Goes to Beon"
+        ]
+      },
+      "7": {
+        title: "Big Data Youth Analysis Bootcamp",
+        category: "Event Management and Operations",
+        client: "Poltekad x Jagoan Hosting",
+        link: "",
+        gallery: [
+          "assets/img/portfolio/pol.webp",
+          "assets/img/portfolio/pol1.webp",
+          "assets/img/portfolio/pol2.webp",
+        ],
+        tags: ["Class Facilitator", "Assessment Management", "Attendance Tracking"],
+        overview: "An intensive 11 day offline technical training program tailored for Cyber Record Study Program students. This immersive bootcamp is designed to build deep data management competency and strengthen foundational skills through lectures, live coding demos, industry case studies, and capstone final projects.",
+        challenge: "• On-Site Management: Overseeing smooth operational flow during a long-term intensive bootcamp.\n\n• Assessment Rigor: Managing continuous participant evaluations and maintaining real-time attendance logs without disruption.",
+        role: "• Acted as an on-site class facilitator across 3 major training modules.\n\n• Compiled daily attendance logs immediately after sessions.",
+        features: [
+          "Offline Class Assistant Facilitator",
+          "Pre-Test & Post-Test Form Management",
+          "Daily Participant Attendance Recap"
+        ]
+      },
+      "8": {
+        title: "GESIT (Gender Equality & Social Inclusion)",
+        category: "Administrative Support",
+        client: "KIAT x Ngalup.co",
+        link: "",
+        gallery: [
+          "assets/img/portfolio/k.webp",
+          "assets/img/portfolio/gesit1.webp",
+          "assets/img/portfolio/gesit2.webp",
+        ],
+        tags: ["Grading Evaluation", "Certificate Generation", "Personal Distribution"],
+        overview: "An Australian Government-backed initiative promoting inclusive economic growth with a strong emphasis on Gender Equality and Social Inclusion in Infrastructure (GESIT) in infrastructure. This collaboration focused on curriculum development and optimizing learning assessment workflows.",
+        challenge: "Reviewing and grading participants' test results to verify answer accuracy and identify correct and incorrect responses.",
+        role: "• Evaluated and graded all participant pre-tests and post-tests throughout the GESIT program.\n\n•  Designed and generated official graduation certificates.\n\n• Handled direct, personalized certificate distribution to participants via private WhatsApp channels.",
+        features: [
+          "Pre-Test & Post-Test Grade Calculation",
+          "Official Graduation Certificate Issuance",
+          "Personalized Distribution via WhatsApp"
+        ]
+      },
+      "9": {
+        title: "5th KOREA-ASEAN Business Model Competition SDGs 2024",
+        category: "Administrative Support",
+        client: "MSS Korea x Kemenkop UKM RI",
+        link: "",
+        gallery: [
+          "assets/img/portfolio/5th.webp",
+          "assets/img/portfolio/bmc2.webp",
+          "assets/img/portfolio/bmc1.webp",
+          "assets/img/portfolio/bmc3.webp",
+        ],
+        tags: ["Prize Management", "Winner Verification", "SDGs Event"],
+        overview: "An international business competition organized by MSS Korea and the Ministry of Cooperatives and SMEs of the Republic of Indonesia. The event aims to accelerate startup and SME growth across South Korea, Indonesia, and ASEAN member states while promoting the Sustainable Development Goals (SDGs). Through this initiative, Ngalup.co participated as an Official Supporting partner",
+        challenge: "Managing post-competition prize claims for international winners and finalists. This required strict data validation before prize distribution and careful setup of conditional form logic based on each winner's placement",
+        role: "Built and managed the end-to-end digital 'Claim the Prize' form tailored specifically for competition winners and Top 10 finalists.",
+        features: [
+          "Official Prize Claim Form Design",
+          "Top 10 Winner Data Verification",
+          "Sponsor Prize Distribution Coordination"
+        ]
+      },
+      "10": {
+        title: "Payslip Generator System",
+        category: "Excel & data processing",
+        client: "PT Neon Jaya Sukses (Prototype)",
+        link: "assets/pdf/Slip-Gaji.xlsx",
+        gallery: [
+          "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800",
+          "assets/img/portfolio/salary.webp",
+          "assets/img/portfolio/salary1.webp",
+        ],
+        tags: ["Excel Dashboard", "INDEX & MATCH", "Data Validation Dropdown", "Payroll Administration"],
+        overview: "An Excel-based payroll administration system prototype designed to automate employee data retrieval and dynamic payslip printing. This HR tool utilizes simulated data to automatically pull employee details, status, and salary components into a standardized payslip template via dropdown selection.",
+        challenge: "Meticulously combining and adjusting INDEX and MATCH formulas to ensure that employee details and salary components were pulled into the payslip template accurately without any cell reference errors.",
+        role: "• System Design & Implementation: Architected the relational dataset and automated lookup formulas to eliminate manual entry bottlenecks for HR administrative officers.",
+        features: [
+          "Automated Data Lookup for 1,000 Employees",
+          "Dynamic INDEX & MATCH Formula Integration",
+          "Employee ID Data Validation Dropdown",
+          "Ready-to-Print Payslip Template Format"
+        ]
+      },
+      "11": {
+        title: "Inventory Control & Sales Log Monitoring System",
+        category: "Excel & data processing",
+        client: "PT Arunika Supply (Prototype)",
+        link: "assets/pdf/Sales-Log.xlsx",
+        gallery: [
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800",
+          "assets/img/portfolio/sales.webp",
+          "assets/img/portfolio/sales1.webp",
+        ],
+        tags: ["Inventory Checklist", "SUMIF & COUNTIF", "Conditional Formatting", "Stock Monitoring"],
+        overview: "An Excel-based inventory control and stock monitoring system prototype designed to track stock levels and support warehouse decisions. This tool automatically monitors stock thresholds, unit sales performance, and restock urgency.",
+        challenge: "Adjusting complex Excel formulas to ensure that stock thresholds, unit sales tracking, and restock urgency statuses automated smoothly without data errors.",
+        role: " Developed an automated Excel inventory control system powered by SUMIF/COUNTIF formulas and Conditional Formatting visual alerts for warehouse supervisors.",
+        features: [
+          "Automated Stock Monitoring for 1,560 SKUs",
+          "Total Units Sold Calculation via SUMIF",
+          "Stock Status Classification via COUNTIF",
+          "Conditional Formatting Visual Indicators"
+        ]
+      },
+      "12": {
+        title: "Recruitment Interview Reminder Automation",
+        category: "Excel & data processing",
+        client: "Nexus Group (Prototype)",
+        link: "assets/documents/Interview-Reminder-Management.xlsx",
+        gallery: [
+          "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800",
+          "assets/img/portfolio/reminder.webp",
+          "assets/img/portfolio/reminder1.webp",
+        ],
+        tags: ["HYPERLINK Formula", "WhatsApp API Link Generator", "Recruitment Admin"],
+        overview: "Manually typing and dispatching reminder texts individually for numerous candidates wastes precious HR hours. This simple tool simulates scheduling and communication workflows to streamline interview reminders with accurate date, time, and room details.",
+        challenge: "Adjusting the formulas carefully to ensure that candidate names, schedules, and room details pulled smoothly and accurately into the message templates without errors. ",
+        role: "• Automated Template: Created a smart Excel template leveraging string concatenation and HYPERLINK formulas to generate instant Click-to-Chat WhatsApp messaging links.",
+        features: [
+          "Click-to-Chat WhatsApp Link Generator",
+          "Automated Reminder Message Formatting",
+          "Interview Schedule & Venue Management"
+        ]
+      },
+      "13": {
+        title: "Sosmed Campagin & Content Strategy",
+        category: "Digital Branding",
+        client: "RuangBantu",
+        link: "",
+        gallery: [
+          "assets/img/portfolio/RB1.webp",
+          "assets/img/portfolio/rb11.webp",
+          "assets/img/portfolio/rb3.webp",
+          "assets/img/portfolio/rb2.webp",
+          "assets/img/portfolio/rb4.webp",
+          "assets/img/portfolio/rb5.webp",
+          "assets/img/portfolio/rb6.webp",
+          "assets/img/portfolio/rb7.webp"
+        ],
+        tags: ["Social Media Marketing", "Content Calendar", "Canva", "Copywriting", "Audience Engagement"],
+        overview: "An integrated social media campaign strategy designed to boost brand awareness, engagement rates, and audience conversion for 'Ruang Bantu', an integrated professional service offering academic editing, CV optimization, and professional presentations. This initiative focuses on formulating structured social media campaigns as a meticulous preparation stage leading up to the official launch scheduled for November 1, 2026.",
+        challenge: "Finding the appropriate Graphic Standard Manual (GSM) and matching font styles to ensure visual identity alignment, alongside executing design work that required meticulous attention to detail to maintain brand consistency.",
+        role: "• Strategic Execution: Designed comprehensive content calendars, produced visual feed assets using Canva, and deployed persuasive AIDA copywriting frameworks.",
+        features: [
+          "Social Media Content Calendar Design",
+          "Visual Feed, Stories & Reels Banner Design",
+          "Persuasive AIDA-Based Copywriting",
+          "Insight & Engagement Performance Analysis"
+        ]
+      },
+      "14": {
+        title: "Expo KWU & Bazar 2025",
+        category: "Event Management and Operations",
+        client: "Campus Project Initiative",
+        link: "",
+        gallery: [
+          "assets/img/portfolio/ex1.webp",
+          "assets/img/portfolio/mkw6.webp",
+          "assets/img/portfolio/mkw7.webp",
+          "assets/img/portfolio/mkw3.webp",
+          "assets/img/portfolio/mkw4.webp",
+          "assets/img/portfolio/mkw8.webp",
+          "assets/img/portfolio/mkw9.webp",
+          "assets/img/portfolio/mkw5.webp",
+          "assets/img/portfolio/mkw10.webp"
+        ],
+        tags: ["Secretarial Admin", "Event Proposal", "LPJ Compilation"],
+        overview: "A campus student entrepreneurship exhibition and innovative product showcase held as part of project-based learning. This initiative is designed to build practical business management and execution skills through real-world application.",
+        challenge: "Managing multi-group campus bazars requires meticulous secretarial workflows, official proposals, stakeholder Invitations and formal accountability reporting (LPJ).",
+        role: "Served as Team Secretary taking complete charge of secretarial operations, drafting official permit proposals, archiving correspondence, and compiling final event reports.",
+        features: [
+          "Proposal & Official Permit Drafting",
+          "Incoming & Outgoing Mail Archiving",
+          "Accountability Report (LPJ) Compilation"
+        ]
+      },
+      "15": {
+        title: "Makrab ABI 2026",
+        category: "Event Management and Operations",
+        client: "International Business Administration Student Association",
+        link: "",
+        gallery: [
+        "assets/img/portfolio/mak.webp",
+          "assets/img/portfolio/mak5.webp",
+          "assets/img/portfolio/mak9.webp",
+          "assets/img/portfolio/mak11.webp",
+          "assets/img/portfolio/mak5.webp",
+          "assets/img/portfolio/mak10.webp",
+          "assets/img/portfolio/mak1.webp",
+          "assets/img/portfolio/mak2.webp",
+          "assets/img/portfolio/mk2.webp",
+          "assets/img/portfolio/mk3.webp",
+          "assets/img/portfolio/mak4.webp",
+        ],
+        tags: ["Event Conception", "Rundown Management", "MC & Cue Cards", "Audience Engagement"],
+        overview: "A welcome and community-building night designed for incoming students, upper-level students, Alumni and academic staff of International Business Administration to foster deep professional connections and social engagement.",
+        challenge: "Selecting engaging games along with rewarding prizes for participants, while designing interactive mechanisms to ensure seamless engagement and achieve the desired sense of camaraderie.",
+        role: "Conceptualized the entire event program, drafted  rundowns, created interactive bonding games, prepared host cue cards, and coordinated logistics.",
+        features: [
+          "Event Concept & Rundown Design",
+          "Host & MC Cue Cards Preparation",
+          "Interactive Games & Bonding Coordination",
+          "On-Site Schedule Pace Management"
+        ]
+      }
+    };
+
+    let currentPhotoIndex = 0;
+    let currentGallery = [];
+    let autoSlideTimer = null;
+
+    function updateActiveImage(index) {
+      if (!currentGallery.length) return;
+      currentPhotoIndex = index;
+
+      const mainImg = document.getElementById('detail-main-img');
+      if (mainImg) {
+        mainImg.classList.remove('animate-fade-in');
+        void mainImg.offsetWidth;
+        mainImg.src = currentGallery[currentPhotoIndex];
+        mainImg.classList.add('animate-fade-in');
+      }
+
+      const allThumbs = document.querySelectorAll('.thumb-item');
+      allThumbs.forEach((thumb, idx) => {
+        if (idx === currentPhotoIndex) {
+          thumb.classList.add('border-brand-600', 'scale-105', 'opacity-100');
+          thumb.classList.remove('border-transparent', 'opacity-40');
+          thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        } else {
+          thumb.classList.remove('border-brand-600', 'scale-105', 'opacity-100');
+          thumb.classList.add('border-transparent', 'opacity-40');
+        }
+      });
+    }
+
+    // Sinkronisasi gambar pada modal popup
+    function updateModalImage() {
+      const modalImg = document.getElementById('modal-img');
+      if (modalImg && currentGallery.length) {
+        modalImg.src = currentGallery[currentPhotoIndex];
+      }
+    }
+
+    function nextImage() {
+      if (!currentGallery.length) return;
+      let nextIdx = (currentPhotoIndex + 1) % currentGallery.length;
+      updateActiveImage(nextIdx);
+    }
+
+    function prevImage() {
+      if (!currentGallery.length) return;
+      let prevIdx = (currentPhotoIndex - 1 + currentGallery.length) % currentGallery.length;
+      updateActiveImage(prevIdx);
+    }
+
+    function openImageModal() {
+      if (!currentGallery.length) return;
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-img');
+      modalImg.src = currentGallery[currentPhotoIndex];
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      stopAutoSlide();
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('image-modal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+      startAutoSlide();
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      autoSlideTimer = setInterval(nextImage, 3500);
+    }
+
+    function stopAutoSlide() {
+      if (autoSlideTimer) clearInterval(autoSlideTimer);
+    }
+
+    function resetAutoSlide() {
+      stopAutoSlide();
+      startAutoSlide();
+    }
+
+    function renderPage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectId = urlParams.get('id') || "1";
+      const data = portfolioDatabase[projectId] || portfolioDatabase["1"];
+
+      if (data) {
+        currentGallery = data.gallery || [];
+
+        document.getElementById('nav-project-title').textContent = data.title;
+        document.getElementById('detail-title').textContent = data.title;
+        document.getElementById('detail-category').textContent = data.category;
+        document.getElementById('detail-client').textContent = data.client;
+        document.getElementById('detail-desc').textContent = data.description || "";
+        document.getElementById('detail-overview').textContent = data.overview;
+        document.getElementById('detail-challenge').textContent = data.challenge;
+        document.getElementById('detail-role').textContent = data.role;
+
+        const containerLink = document.getElementById('container-link');
+        const detailLink = document.getElementById('detail-link');
+        const detailLinkText = document.getElementById('detail-link-text');
+
+        if (data.link && data.link.trim() !== "") {
+          detailLink.href = data.link;
+          detailLinkText.textContent = data.link;
+          containerLink.style.display = "block";
+        } else {
+          containerLink.style.display = "none";
+        }
+
+        document.getElementById('photo-count').textContent = currentGallery.length;
+
+        const thumbContainer = document.getElementById('detail-thumbnails');
+        if (thumbContainer) {
+          thumbContainer.innerHTML = '';
+          currentGallery.forEach((imgUrl, idx) => {
+            const img = document.createElement('img');
+            img.src = imgUrl;
+            img.alt = `Document Thumbnail ${idx + 1}`;
+            img.className = 'thumb-item w-14 h-14 sm:w-16 sm:h-16 object-cover rounded-xl cursor-pointer border-2 transition-all flex-shrink-0 opacity-40 hover:opacity-100';
+            img.addEventListener('click', () => {
+              updateActiveImage(idx);
+              resetAutoSlide();
+            });
+            thumbContainer.appendChild(img);
+          });
+        }
+
+        updateActiveImage(0);
+        startAutoSlide();
+
+        const tagsContainer = document.getElementById('detail-tags');
+        if (tagsContainer) {
+          tagsContainer.innerHTML = '';
+          data.tags.forEach(tag => {
+            const span = document.createElement('span');
+            span.className = 'px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-bold';
+            span.textContent = tag;
+            tagsContainer.appendChild(span);
+          });
+        }
+
+        const featuresContainer = document.getElementById('detail-features');
+        if (featuresContainer) {
+          featuresContainer.innerHTML = '';
+          data.features.forEach(feat => {
+            const li = document.createElement('li');
+            li.className = 'flex items-center gap-2 py-1 font-semibold text-slate-700';
+            li.innerHTML = `<i class="bi bi-check2-circle text-brand-600 text-base"></i> <span>${feat}</span>`;
+            featuresContainer.appendChild(li);
+          });
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderPage();
+
+      // Keyboard Shortcut: ESC untuk tutup modal, Tombol Panah Kiri/Kanan untuk geser gambar di modal
+      document.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('image-modal');
+        const isModalOpen = modal && modal.classList.contains('flex');
+
+        if (e.key === 'Escape') {
+          closeImageModal();
+        } else if (isModalOpen && e.key === 'ArrowRight') {
+          nextImage();
+          updateModalImage();
+        } else if (isModalOpen && e.key === 'ArrowLeft') {
+          prevImage();
+          updateModalImage();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

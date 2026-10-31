@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Nabila Hidayatul Amalia | Executive Portfolio</title>
+  <meta name="description" content="Portofolio Nabila Hidayatul Amalia - International Business Administration Specialist, Export Compliance & Event Operations Coordinator.">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Vendors -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            slate: {
+              850: '#131e32',
+              900: '#0f172a',
+            },
+            amberAccent: {
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          },
+          animation: {
+            'float-slow': 'float 6s ease-in-out infinite',
+            'float-delayed': 'float 6s ease-in-out 3s infinite',
+            'pulse-subtle': 'pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'spin-slow': 'spin 12s linear infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '50%': { transform: 'translateY(-8px) rotate(2deg)' },
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+              '50%': { opacity: 0.85, transform: 'scale(1.03)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* Glass Navbar */
+    .glass-navbar {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+    }
+
+    /* Compact Interactive Cards */
+    .touch-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 1rem;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .touch-card:hover, .touch-card:active {
+      border-color: #2563eb;
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 12px 28px -6px rgba(37, 99, 235, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+    }
+
+    /* Touch Ripple Effect Visual */
+    .ripple-effect {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(37, 99, 235, 0.18);
+      transform: scale(0);
+      animation: rippleAnim 0.6s linear;
+      pointer-events: none;
+    }
+
+    @keyframes rippleAnim {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+
+    /* Tool Card Flip Interactive */
+    .flip-card {
+      perspective: 1000px;
+    }
+    .flip-card-inner {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .flip-card-back {
+      transform: rotateY(180deg);
+    }
+
+    /* Progress Bar Glow */
+    .progress-bar-fill {
+      transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2563eb;
+    }
+
+    /* Top Progress Bar */
+    #scrollProgress {
+      height: 3px;
+      background: linear-gradient(90deg, #2563eb 0%, #d97706 100%);
+      width: 0%;
+    }
+  </style>
+</head>
+
+<body class="relative bg-slate-50 text-slate-700 selection:bg-brand-600 selection:text-white">
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="fixed top-20 right-4 z-[120] flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="fixed top-0 left-0 right-0 z-[100]">
+    <div id="scrollProgress" class="transition-all duration-150"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-navbar" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Logo & Brand Name -->
+      <a href="#hero" class="flex items-center gap-2.5 group text-decoration-none active:scale-95 transition-transform">
+        <div class="w-9 h-9 rounded-xl bg-slate-900 text-white flex items-center justify-center font-extrabold text-sm shadow-sm group-hover:bg-brand-600 transition-colors">
+          NHA
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-slate-900 text-xs sm:text-sm tracking-tight leading-none group-hover:text-brand-600 transition-colors">Nabila Hidayatul Amalia</span>
+          <span class="text-[10px] text-amberAccent-600 font-bold uppercase tracking-wider mt-0.5">Business Administration</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-1">
+        <a href="#hero" class="nav-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all">Home</a>
+        <a href="#competency" class="nav-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all">Competencies</a>
+        <a href="#experience" class="nav-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all">Experience</a>
+        <a href="#portfolio" class="nav-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all">Portfolio</a>
+        <a href="#achievements" class="nav-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all">Achievements </a>
+        <a href="#contact" class="nav-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all">Contact</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-2">
+        <a href="mailto:hidayanabila99@gmail.com?subject=Inquiry%20Karir%20-%20Nabila%20Hidayatul%20Amalia" 
+           class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 active:scale-95 text-white text-xs font-bold shadow-sm transition-all text-decoration-none flex items-center gap-1.5">
+          <i class="fa-solid fa-paper-plane text-xs"></i> <span class="hidden sm:inline">Connect</span>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 active:scale-90 transition-transform">
+          <i class="bi bi-list text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-3 space-y-2 shadow-lg">
+      <a href="#hero" class="mobile-link block text-xs font-bold text-slate-700 py-1.5">Home</a>
+      <a href="#competency" class="mobile-link block text-xs font-bold text-slate-700 py-1.5">Core Competencies</a>
+      <a href="#experience" class="mobile-link block text-xs font-bold text-slate-700 py-1.5">experience</a>
+      <a href="#portfolio" class="mobile-link block text-xs font-bold text-slate-700 py-1.5">Portfolio </a>
+      <a href="#achievements" class="mobile-link block text-xs font-bold text-slate-700 py-1.5">Achievements </a>
+      <a href="#contact" class="mobile-link block text-xs font-bold text-slate-700 py-1.5">Contact </a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- HERO SECTION (Compact, Modern & High-Interactive) -->
+    <section id="hero" class="py-10 md:py-16 bg-gradient-to-b from-slate-100/70 via-white to-slate-50 relative overflow-hidden">
+      
+      <!-- Background Ambient Orbs -->
+      <div class="absolute top-10 left-1/4 w-72 h-72 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-10 right-1/4 w-72 h-72 bg-amberAccent-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Hero Overview Left -->
+          <div class="lg:col-span-7 space-y-4 text-left">
+
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <span id="typedPrefix"></span><br>
+              <span class="text-5xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-snug" id="typedRoles">Business Administration Specialist</span>
+            </h1>
+
+
+            <p class="text-xl sm:text-sm text-slate-800 leading-relaxed text-sm text-base max-w-3xl">
+              An International Business Administration graduate specialized in administrative operations, data-driven market research, and event management. Proven track record in managing collaborative projects, executing nationwide research, and handling international trade administration. <strong class="text-slate-800"> Experienced in providing end-to-end executive support, coordinating multi-stakeholder programs, and streamlining business workflows.</strong>
+            </p>
+
+
+            <!-- Compact Counter Metrics -->
+            <div class="grid grid-cols-3 gap-3 pt-3 border-t border-slate-200/80 max-w-md">
+              <div class="p-2.5 bg-white rounded-xl border border-slate-200 shadow-xs text-center cursor-pointer hover:border-brand-500 active:scale-95 transition-all stat-card">
+                <div class="text-xl font-extrabold text-slate-900 font-display">
+                  <span class="counter" data-target="1000">0</span><span class="text-brand-600">+</span>
+                </div>
+                <div class="text-[10px] font-bold text-slate-500 mt-0.5">Event Participants</div>
+              </div>
+
+              <div class="p-2.5 bg-white rounded-xl border border-slate-200 shadow-xs text-center cursor-pointer hover:border-amberAccent-500 active:scale-95 transition-all stat-card">
+                <div class="text-xl font-extrabold text-slate-900 font-display">
+                  <span class="counter" data-target="30">0</span><span class="text-amberAccent-600">+</span>
+                </div>
+                <div class="text-[10px] font-bold text-slate-500 mt-0.5">Event Executed</div>
+              </div>
+
+              <div class="p-2.5 bg-white rounded-xl border border-slate-200 shadow-xs text-center cursor-pointer hover:border-emerald-500 active:scale-95 transition-all stat-card">
+                <div class="text-xl font-extrabold text-slate-900 font-display">
+                  <span class="counter" data-target="45">0</span><span class="text-emerald-600">%</span>
+                </div>
+                <div class="text-[10px] font-bold text-slate-500 mt-0.5">MSME Sales Growth</div>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex items-center gap-3 pt-2">
+              <a href="#portfolio" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-brand-600 active:scale-95 text-white font-bold text-xs shadow-md transition-all text-decoration-none flex items-center gap-1.5">
+                <i class="fa-solid fa-briefcase"></i> Portfolio
+              </a>
+              <a href="assets/pdf/Nabila Hidayatul Amalia - General.pdf" download="CV_Nabila_Hidayatul_Amalia.pdf" class="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 active:scale-95 text-slate-800 font-bold text-xs border border-slate-300 shadow-xs transition-all text-decoration-none flex items-center gap-1.5">
+                <i class="fa-solid fa-file-arrow-down"></i> Download CV
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Profile Image Frame with Floating Interactive Badges -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-xs tilt-element">
+              
+              <!-- Micro Floating Badges Attached to Frame -->
+              <div class="absolute -top-3 -left-3 z-20 px-3 py-1.5 rounded-xl bg-white border border-slate-200 shadow-lg text-[10px] font-extrabold text-slate-800 flex items-center gap-1.5 animate-float-slow">
+                <i class="fa-solid fa-certificate text-amberAccent-600"></i> Hai, I Am
+              </div>
+
+              
+
+              <!-- Main Profile Frame -->
+              <div class="bg-white p-2.5 rounded-2xl border border-slate-200 shadow-xl overflow-hidden group w-80">
+                <div class="relative overflow-hidden rounded-xl h-100">
+                  <img src="assets/img/profile/profile1.webp" 
+                       alt="Nabila Hidayatul Amalia" 
+                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent opacity-80"></div>
+                  
+                  <div class="absolute bottom-3 left-3 right-3 text-white">
+                    <span class="text-xs font-bold block">Nabila Hidayatul Amalia</span>
+                    <span class="text-[10px] text-amberAccent-400 font-semibold block">Bachelor of International Business Administration</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE COMPETENCY MATRIX & INTERACTIVE TOOLS -->
+    <section id="competency" class="py-14 bg-white border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Core Competencies & Education</span>
+          <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Skills, Tools & Academic Background</h2>
+          <p class="text-xs text-slate-500 mt-1">A comprehensive overview of technical skills, proficient work tools, and academic background.</p>
+        </div>
+
+        <!-- WRAPPER UTAMA: Grid 3 Kolom di Desktop (2 Kolom Kartu Kompetensi + 1 Kolom Education) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full my-6 items-stretch">
+
+  <!-- BLOK KIRI: 4 KARTU KOMPETENSI (Mengambil 2 Kolom) -->
+  <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+    <!-- Kartu 1: Business Admin & Executive Support -->
+    <div class=" p-5 flex flex-col justify-between bg-white rounded-2xl border border-slate-200/80 shadow-sm" data-toast="Executive Support, Workflows, Archiving & Automation">
+      <div>
+        <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-lg font-bold mb-3 border border-brand-100">
+          <i class="fa-solid fa-user-gear"></i>
+        </div>
+        <h3 class="font-bold text-slate-900 text-sm mb-1.5">1. Business Admin & Executive Support</h3>
+        <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+          Executive Administrative Support, Digital Archiving, Document & Workflow Management, Business Correspondence.
+        </p>
+      </div>
+      <div>
+        <div class="flex flex-wrap gap-1 mb-3">
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">Google Workspace</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">MS Office</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">ERP QAD</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">Zender</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-1.5 mb-1 overflow-hidden">
+          <div class="bg-brand-600 h-1.5 rounded-full progress-bar-fill" style="width: 95%"></div>
+        </div>
+        <div class="text-[10px] font-bold text-slate-400 justify-between flex"><span>Proficiency</span><span>95%</span></div>
+      </div>
+    </div>
+
+    <!-- Kartu 2: Logistics & Finance Operations -->
+    <div class=" p-5 flex flex-col justify-between bg-white rounded-2xl border border-slate-200/80 shadow-sm " data-toast="Stock Opname, Tax Reconciliation, QC & Export Docs">
+      <div>
+        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amberAccent-600 flex items-center justify-center text-lg font-bold mb-3 border border-amber-100">
+          <i class="fa-solid fa-boxes-stacked"></i>
+        </div>
+        <h3 class="font-bold text-slate-900 text-sm mb-1.5">2. Logistics & Finance Operations</h3>
+        <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+          Inventory & Stock Opname, Tax Reconciliation, Quality Control & Sample Testing, Export Documentation.
+        </p>
+      </div>
+      <div>
+        <div class="flex flex-wrap gap-1 mb-3">
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">General Ledger</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">QAD ERP</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">Inventory Tracking</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-1.5 mb-1 overflow-hidden">
+          <div class="bg-amberAccent-600 h-1.5 rounded-full progress-bar-fill" style="width: 82%"></div>
+        </div>
+        <div class="text-[10px] font-bold text-slate-400 justify-between flex"><span>Proficiency</span><span>82%</span></div>
+      </div>
+    </div>
+
+    <!-- Kartu 3: Event Operations & Community Hosting -->
+    <div class="p-5 flex flex-col justify-between bg-white rounded-2xl border border-slate-200/80 shadow-sm " data-toast="Event Management, Speaker Sourcing, MC & Email Automation">
+      <div>
+        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold mb-3 border border-emerald-100">
+          <i class="fa-solid fa-microphone-lines"></i>
+        </div>
+        <h3 class="font-bold text-slate-900 text-sm mb-1.5">3. Event Operations & Community Hosting</h3>
+        <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+          End-to-End Event Management, Speaker Sourcing & Outreach, Technical Moderating/MC, Email Marketing Sequence.
+        </p>
+      </div>
+      <div>
+        <div class="flex flex-wrap gap-1 mb-3">
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">OBS Studio</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">Zoom </span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">Sendy</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">LinkedIn </span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">Google Workspace </span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-1.5 mb-1 overflow-hidden">
+          <div class="bg-emerald-600 h-1.5 rounded-full progress-bar-fill" style="width: 90%"></div>
+        </div>
+        <div class="text-[10px] font-bold text-slate-400 justify-between flex"><span>Proficiency</span><span>90%</span></div>
+      </div>
+    </div>
+
+    <!-- Kartu 4: Market Research & Project Leadership -->
+    <div class="p-5 flex flex-col justify-between bg-white rounded-2xl border border-slate-200/80 shadow-sm " data-toast="Data Mining, Grant Leadership, Branding & Strategy">
+      <div>
+        <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg font-bold mb-3 border border-purple-100">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <h3 class="font-bold text-slate-900 text-sm mb-1.5">4. Market Research & Project Leadership</h3>
+        <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+          Grant Project Leadership, Brand Identity Development, Digital Marketing Strategy.
+        </p>
+      </div>
+      <div>
+        <div class="flex flex-wrap gap-1 mb-3">
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">Figma</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">Canva</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">SPSS / Data Sheets</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded font-medium">SMM Tools</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-1.5 mb-1 overflow-hidden">
+          <div class="bg-purple-600 h-1.5 rounded-full progress-bar-fill" style="width: 88%"></div>
+        </div>
+        <div class="text-[10px] font-bold text-slate-400 justify-between flex"><span>Proficiency</span><span>88%</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BLOK KANAN: SECTION EDUCATION (Mengambil 1 Kolom di Samping Kanan) -->
+  <div class="lg:col-span-1 bg-white rounded-2xl border border-slate-200/80 p-5 shadow-sm flex flex-col justify-between h-full">
+    <div>
+      <!-- Header Education -->
+      <div class="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
+        <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3 class="font-bold text-slate-900 text-sm">Education Background</h3>
+      </div>
+
+      <!-- Campus & Degree Info -->
+      <div class="mb-4">
+        <span class="inline-block text-[10px] font-bold text-brand-600 bg-brand-50 border border-brand-100 px-2 py-0.5 rounded-full mb-1">
+          GPA: 3.85 / 4.00
+        </span>
+        <h4 class="font-bold text-slate-900 text-sm leading-snug">Pangkep state Polythechnic of Agriculture</h4>
+        <p class="text-xs text-slate-500 font-medium mt-1">
+          Bachelor of Applied Science (S.Tr.) in International Business Administration
+        </p>
+        <p class="text-xs text-slate-500 font-medium mt-1">
+          <strong class="text-xs font-semibold text-slate-700 mb-2">Research Focus : Management, logistics, and export-import. </strong>
+        </p>
+      </div>
+
+      <!-- Mata Kuliah Relevan -->
+      <div class="mb-4">
+        <p class="text-xs font-semibold text-slate-700 mb-2">Relevant Coursework:</p>
+        <div class="flex flex-wrap gap-1">
+          <span class="px-2 py-1 bg-slate-50 border border-slate-200/80 text-slate-600 text-[10px] rounded-md">Export-Import Administration</span>
+          <span class="px-2 py-1 bg-slate-50 border border-slate-200/80 text-slate-600 text-[10px] rounded-md">Customs and Excise</span>
+          <span class="px-2 py-1 bg-slate-50 border border-slate-200/80 text-slate-600 text-[10px] rounded-md">Tax Management</span>
+          <span class="px-2 py-1 bg-slate-50 border border-slate-200/80 text-slate-600 text-[10px] rounded-md">Logistics and Transportation</span>
+          <span class="px-2 py-1 bg-slate-50 border border-slate-200/80 text-slate-600 text-[10px] rounded-md">Business Correspondence</span>
+          <span class="px-2 py-1 bg-slate-50 border border-slate-200/80 text-slate-600 text-[10px] rounded-md">Business Administration</span>
+          <span class="px-2 py-1 bg-slate-50 border border-slate-200/80 text-slate-600 text-[10px] rounded-md">Public Relations</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Transkrip Nilai (Di bagian paling bawah kartu kanan) -->
+    <div class="pt-3 border-t border-slate-100 mt-2 relative z-20">
+      <a href="assets/pdf/Academic Transcript.pdf" target="_blank" onclick="event.stopPropagation();" class="w-full py-2 px-3 bg-brand-50 hover:bg-brand-100/80 text-brand-600 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-colors cursor-pointer">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span>Academic transcript(PDF)</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+        </div>
+
+        <!-- FLIP/FLOP INTERACTIVE TOOLS CARDS -->
+        <div class="pt-6">
+          <div class="text-center mb-6">
+            <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-wider">Touch / Hover Card To Flip</span>
+            <h3 class="text-base font-bold text-slate-800">Software & Tools Matrix</h3>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+            
+            <!-- Tool 1 -->
+            <div class="flip-card h-28 cursor-pointer">
+              <div class="flip-card-inner w-full h-full relative rounded-xl shadow-xs">
+                <div class="flip-card-front absolute inset-0 bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                  <i class="fa-solid fa-file-excel text-emerald-600 text-2xl mb-1"></i>
+                  <span class="text-xs font-bold text-slate-800">MS Excel</span>
+                </div>
+                <div class="flip-card-back absolute inset-0 bg-slate-900 text-white rounded-xl p-2.5 flex flex-col items-center justify-center text-center">
+                  <span class="text-[10px] font-bold text-emerald-400">Advanced</span>
+                  <p class="text-[9px] text-slate-300 mt-1">VLOOKUP, Pivot, Data Reconciliation</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tool 2 -->
+            <div class="flip-card h-28 cursor-pointer">
+              <div class="flip-card-inner w-full h-full relative rounded-xl shadow-xs">
+                <div class="flip-card-front absolute inset-0 bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                  <i class="fa-solid fa-chart-pie text-brand-600 text-2xl mb-1"></i>
+                  <span class="text-xs font-bold text-slate-800">SPSS & SmartPLS</span>
+                </div>
+                <div class="flip-card-back absolute inset-0 bg-slate-900 text-white rounded-xl p-2.5 flex flex-col items-center justify-center text-center">
+                  <span class="text-[10px] font-bold text-brand-400">Data Analytics</span>
+                  <p class="text-[9px] text-slate-300 mt-1"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tool 3 -->
+            <div class="flip-card h-28 cursor-pointer">
+              <div class="flip-card-inner w-full h-full relative rounded-xl shadow-xs">
+                <div class="flip-card-front absolute inset-0 bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                  <i class="fa-solid fa-palette text-amberAccent-600 text-2xl mb-1"></i>
+                  <span class="text-xs font-bold text-slate-800">Canva Pro</span>
+                </div>
+                <div class="flip-card-back absolute inset-0 bg-slate-900 text-white rounded-xl p-2.5 flex flex-col items-center justify-center text-center">
+                  <span class="text-[10px] font-bold text-amberAccent-400">Visual Design</span>
+                  <p class="text-[9px] text-slate-300 mt-1">Packaging Label & Social Feeds</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tool 4 -->
+            <div class="flip-card h-28 cursor-pointer">
+              <div class="flip-card-inner w-full h-full relative rounded-xl shadow-xs">
+                <div class="flip-card-front absolute inset-0 bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                  <i class="fa-solid fa-video text-purple-600 text-2xl mb-1"></i>
+                  <span class="text-xs font-bold text-slate-800">OBS & Zoom</span>
+                </div>
+                <div class="flip-card-back absolute inset-0 bg-slate-900 text-white rounded-xl p-2.5 flex flex-col items-center justify-center text-center">
+                  <span class="text-[10px] font-bold text-purple-400">Broadcast</span>
+                  <p class="text-[9px] text-slate-300 mt-1">Hybrid Webinar Setup & Live Stream</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tool 5 -->
+            <div class="flip-card h-28 cursor-pointer">
+              <div class="flip-card-inner w-full h-full relative rounded-xl shadow-xs">
+                <div class="flip-card-front absolute inset-0 bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                  <i class="fa-brands fa-google text-red-500 text-2xl mb-1"></i>
+                  <span class="text-xs font-bold text-slate-800">Workspace</span>
+                </div>
+                <div class="flip-card-back absolute inset-0 bg-slate-900 text-white rounded-xl p-2.5 flex flex-col items-center justify-center text-center">
+                  <span class="text-[10px] font-bold text-red-400">Productivity</span>
+                  <p class="text-[9px] text-slate-300 mt-1">Docs, Sheets, Form, Drive Cloud</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tool 6 -->
+            <div class="flip-card h-28 cursor-pointer">
+              <div class="flip-card-inner w-full h-full relative rounded-xl shadow-xs">
+                <div class="flip-card-front absolute inset-0 bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+                  <i class="fa-solid fa-scissors text-slate-800 text-2xl mb-1"></i>
+                  <span class="text-xs font-bold text-slate-800">CapCut</span>
+                </div>
+                <div class="flip-card-back absolute inset-0 bg-slate-900 text-white rounded-xl p-2.5 flex flex-col items-center justify-center text-center">
+                  <span class="text-[10px] font-bold text-indigo-400">Video Editing</span>
+                  <p class="text-[9px] text-slate-300 mt-1">Short Reels & Event Recap Editing</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL WORK EXPERIENCE TIMELINE (Compact Card Stack) -->
+    <section id="experience" class="py-14 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Profesional Experience</span>
+          <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Work & Leadership Experience</h2>
+          <p class="text-xs text-slate-500 mt-1">Select a card to explore project details and documentation.</p>
+        </div>
+
+    <!-- Grid Kartu -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+
+      <!-- KARTU 1: Ngalup Collaborative Network -->
+      <div class="exp-card flex flex-col justify-between bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition-all overflow-hidden" data-cat="event">
+        <div>
+          <!-- Slideshow Foto -->
+          <div class="relative w-full h-44 overflow-hidden bg-slate-100 exp-carousel" data-interval="3500">
+            <div class="carousel-track flex w-full h-full transition-transform duration-700 ease-in-out">
+                <img src="assets/img/work/work4.webp" alt="Foto 1 Ngalup" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/work4.webp', 'assets/img/work/nga1.webp', 'assets/img/work/ng2.webp', 'assets/img/work/ng4.webp', 'assets/img/work/work1.webp'], 0)">
+                <img src="assets/img/work/nga1.webp" alt="Foto 2 Ngalup" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/work4.webp', 'assets/img/work/nga1.webp', 'assets/img/work/ng2.webp', 'assets/img/work/ng4.webp', 'assets/img/work/work1.webp'], 1)">
+                <img src="assets/img/work/ng2.webp" alt="Foto 3 Ngalup" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/work4.webp', 'assets/img/work/nga1.webp', 'assets/img/work/ng2.webp', 'assets/img/work/ng4.webp', 'assets/img/work/work1.webp'], 2)">
+                <img src="assets/img/work/ng4.webp" alt="Foto 4 Ngalup" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/work4.webp', 'assets/img/work/nga1.webp', 'assets/img/work/ng2.webp', 'assets/img/work/ng4.webp', 'assets/img/work/work1.webp'], 3)">
+                <img src="assets/img/work/work1.webp" alt="Foto 5 Ngalup" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/work4.webp', 'assets/img/work/nga1.webp', 'assets/img/work/ng2.webp', 'assets/img/work/ng4.webp', 'assets/img/work/work1.webp'], 4)">
+              
+            </div>
+            <span class="absolute top-2.5 right-2.5 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-semibold px-2 py-0.5 rounded-full pointer-events-none">
+              <i class="fa-solid fa-images mr-1"></i>5 Photos
+            </span>
+          </div>
+
+          <div class="p-4">
+            <span class="text-[10px] font-bold text-amber-600 uppercase tracking-wider block mb-1">Internship</span>
+            <h4 class="font-bold text-slate-900 text-sm mb-1">Community & Event Host </h4>
+            <p class="text-xs font-semibold text-brand-600 mb-2">Ngalup Collaborative Network | Jul 2024 – Dec 2024</p>
+            <p class="text-xs text-slate-600 leading-relaxed line-clamp-3">
+              Ngalup Collaborative Network is an accelerator program established in 2017 and a member of Coworking Indonesia, operating within a hexa-helix ecosystem to support the development of talent, startups, and SMEs. Ngalup also serves as a collaborative platform for talents, stakeholders, and businesses to connect, build networks, and establish partnerships, with a focus on program execution and event concept management through a hexa-helix approach.
+            </p>
+          </div>
+        </div>
+        <div class="p-4 pt-0 border-t border-slate-100 flex items-center justify-between mt-2">
+          <span class="text-[10px] font-semibold text-slate-400"></span>
+          <button type="button" class="btn-open-modal text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 cursor-pointer" data-target="modal-ngalup">
+            Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- KARTU 2: PT Sulotco Jaya Abadi -->
+      <div class="exp-card flex flex-col justify-between bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition-all overflow-hidden" data-cat="trade">
+        <div>
+          <div class="relative w-full h-44 overflow-hidden bg-slate-100 exp-carousel" data-interval="4000">
+            <div class="carousel-track flex w-full h-full transition-transform duration-700 ease-in-out">
+              <img src="assets/img/work/sul4.webp" alt="Foto 1 Sulotco" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/sul4.webp', 'assets/img/work/sul5.webp', 'assets/img/work/sul3.webp', 'assets/img/work/sul8.webp', 'assets/img/work/sul1.webp'], 0)">
+              <img src="assets/img/work/sul5.webp" alt="Foto 2 Sulotco" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/sul4.webp', 'assets/img/work/sul5.webp', 'assets/img/work/sul3.webp', 'assets/img/work/sul8.webp', 'assets/img/work/sul1.webp'], 1)">
+              <img src="assets/img/work/sul3.webp" alt="Foto 3 Sulotco" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/sul4.webp', 'assets/img/work/sul5.webp', 'assets/img/work/sul3.webp', 'assets/img/work/sul8.webp', 'assets/img/work/sul1.webp'], 2)">
+              <img src="assets/img/work/sul8.webp" alt="Foto 4 Sulotco" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/sul4.webp', 'assets/img/work/sul5.webp', 'assets/img/work/sul3.webp', 'assets/img/work/sul8.webp', 'assets/img/work/sul1.webp'], 3)">
+              <img src="assets/img/work/sul1.webp" alt="Foto 5 Sulotco" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/sul4.webp', 'assets/img/work/sul5.webp', 'assets/img/work/sul3.webp', 'assets/img/work/sul8.webp', 'assets/img/work/sul1.webp'], 4)">
+            </div>
+            <span class="absolute top-2.5 right-2.5 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-semibold px-2 py-0.5 rounded-full pointer-events-none">
+              <i class="fa-solid fa-images mr-1"></i>5 Photos
+            </span>
+          </div>
+          <div class="p-4">
+            <span class="text-[10px] font-bold text-amber-600 uppercase tracking-wider block mb-1">Internship</span>
+            <h4 class="font-bold text-slate-900 text-sm mb-1">Administrative Assistant</h4>
+            <p class="text-xs font-semibold text-brand-600 mb-2">PT Sulotco Jaya Abadi | Jul 2025 – Dec 2025 </p>
+            <p class="text-xs text-slate-600 leading-relaxed line-clamp-3">
+              Coffee cultivation and processing, domestic and international export operations, quality control, export documentation, and cross-departmental administrative coordination to support efficient business operations.
+            </p>
+          </div>
+        </div>
+        <div class="p-4 pt-0 border-t border-slate-100 flex items-center justify-between mt-2">
+          <span class="text-[10px] font-semibold text-slate-400"></span>
+          <button type="button" class="btn-open-modal text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 cursor-pointer" data-target="modal-sulotco">
+            Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- KARTU 3: P2MD Kemendikbudristek -->
+      <div class="exp-card flex flex-col justify-between bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition-all overflow-hidden" data-cat="branding">
+        <div>
+          <div class="relative w-full h-44 overflow-hidden bg-slate-100 exp-carousel" data-interval="4500">
+            <div class="carousel-track flex w-full h-full transition-transform duration-700 ease-in-out">
+              <img src="assets/img/work/p3.webp" alt="Foto 1 P2MD" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/p3.webp', 'assets/img/work/p23.webp', 'assets/img/work/p2.webp', 'assets/img/work/p22.webp', 'assets/img/work/p21.webp'], 0)">
+              <img src="assets/img/work/p23.webp" alt="Foto 1 P2MD" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/p3.webp', 'assets/img/work/p23.webp', 'assets/img/work/p2.webp', 'assets/img/work/p22.webp', 'assets/img/work/p21.webp'], 1)">
+              <img src="assets/img/work/p2.webp" alt="Foto 1 P2MD" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/p3.webp', 'assets/img/work/p23.webp', 'assets/img/work/p2.webp', 'assets/img/work/p22.webp', 'assets/img/work/p21.webp'], 2)">
+              <img src="assets/img/work/p22.webp" alt="Foto 1 P2MD" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/p3.webp', 'assets/img/work/p23.webp', 'assets/img/work/p2.webp', 'assets/img/work/p22.webp', 'assets/img/work/p21.webp'], 3)">
+              <img src="assets/img/work/p21.webp" alt="Foto 1 P2MD" class="w-full h-full object-cover flex-shrink-0 cursor-pointer" onclick="openGallery(['assets/img/work/p3.webp', 'assets/img/work/p23.webp', 'assets/img/work/p2.webp', 'assets/img/work/p22.webp', 'assets/img/work/p21.webp'], 4)">
+            </div>
+            <span class="absolute top-2.5 right-2.5 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-semibold px-2 py-0.5 rounded-full pointer-events-none">
+              <i class="fa-solid fa-images mr-1"></i>5 Photos
+            </span>
+          </div>
+          <div class="p-4">
+            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Ministry of Education Program</span>
+            <h4 class="font-bold text-slate-900 text-sm mb-1">Community Empowerment Project Leader</h4>
+            <p class="text-xs font-semibold text-brand-600 mb-2"> Bonto Manai Village |  Aug 2023 – Dec 2023</p>
+            <p class="text-xs text-slate-600 leading-relaxed line-clamp-3">
+              The Village Community Empowerment Program (Program Pemberdayaan Masyarakat Desa/P2MD) is an initiative organized by the Directorate of Academic Affairs for Vocational Higher Education, providing students with the opportunity to submit proposals for village community empowerment projects through a competitive selection process. Proposals that pass the selection process receive funding to implement projects focused on identifying local potential and challenges while strengthening community capacity, self-reliance, and overall well-being.
+            </p>
+          </div>
+        </div>
+        <div class="p-4 pt-0 border-t border-slate-100 flex items-center justify-between mt-2">
+          <span class="text-[10px] font-semibold text-slate-400"></span>
+          <button type="button" class="btn-open-modal text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 cursor-pointer" data-target="modal-p2md">
+            Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </button>
+        </div>
+      </div>
+
+</div>
+<!-- === MODAL GALERI SLIDER (GESER FOTO) === -->
+<div id="galleryModal" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-4">
+  <!-- Tombol Close (X) -->
+  <button onclick="closeGallery()" class="absolute top-5 right-5 text-white text-4xl font-bold hover:text-slate-300 focus:outline-none z-50 cursor-pointer">&times;</button>
+  
+  <!-- Tombol Previous (<) -->
+  <button onclick="prevImage()" class="absolute left-5 text-white text-3xl font-bold bg-black/50 hover:bg-black/80 w-12 h-12 rounded-full flex items-center justify-center transition-all z-50 cursor-pointer">&#10094;</button>
+  
+  <!-- Area Gambar -->
+  <div class="relative max-w-5xl max-h-[85vh] flex flex-col items-center">
+      <img id="galleryModalImg" src="" alt="Popup Gallery Image" class="max-w-full max-h-[75vh] rounded-xl shadow-2xl object-contain">
+      <!-- Indikator Nomor Foto (Contoh: 1 / 5) -->
+      <span id="galleryCounter" class="text-white text-xs font-semibold mt-3 bg-slate-800/80 px-3 py-1 rounded-full">1 / 5</span>
+  </div>
+
+  <!-- Tombol Next (>) -->
+  <button onclick="nextImage()" class="absolute right-5 text-white text-3xl font-bold bg-black/50 hover:bg-black/80 w-12 h-12 rounded-full flex items-center justify-center transition-all z-50 cursor-pointer">&#10095;</button>
+</div>
+
+<!-- Skrip JavaScript Galeri -->
+<script>
+let currentGalleryImages = [];
+let currentIndex = 0;
+
+function openGallery(imageArray, startIndex) {
+  currentGalleryImages = imageArray;
+  currentIndex = startIndex;
+  updateGalleryView();
+  document.getElementById('galleryModal').classList.remove('hidden');
+}
+
+function closeGallery() {
+  document.getElementById('galleryModal').classList.add('hidden');
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % currentGalleryImages.length;
+  updateGalleryView();
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+  updateGalleryView();
+}
+
+function updateGalleryView() {
+  const modalImg = document.getElementById('galleryModalImg');
+  const counter = document.getElementById('galleryCounter');
+  modalImg.src = currentGalleryImages[currentIndex];
+  counter.innerText = `${currentIndex + 1} / ${currentGalleryImages.length}`;
+}
+</script>
+
+  </div>
+</section>
+
+
+<!-- ==================== POPUP MODAL NGALUP ==================== -->
+<div id="modal-ngalup" class="custom-modal fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+  <div class="bg-white w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh] relative">
+    <div class="relative h-56 w-full bg-slate-100 flex-shrink-0">
+      <img src="assets/img/work/nga1.webp" alt="Banner" class="w-full h-full object-cover">
+      <button type="button" class="btn-close-modal absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center text-sm transition-colors z-30">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="p-6 overflow-y-auto">
+      <span class="text-xs font-bold text-brand-600 block mb-1">Ngalup Collaborative Network | Aug 2024 – Dec 2024</span>
+      <h3 class="text-lg font-bold text-slate-900 mb-3">Community & Event Host Specialist — Ngalup Collaborative Network</h3>
+      <div class="text-xs text-slate-600 leading-relaxed space-y-3 border-t border-slate-100 pt-3">
+        <p> Ngalup Collaborative Network is an accelerator program established in 2017 and a member of Coworking Indonesia, operating within a hexa-helix ecosystem to support the development of talent, startups, and SMEs. Ngalup also serves as a collaborative platform for talents, stakeholders, and businesses to connect, build networks, and establish partnerships, with a focus on program execution and event concept management through a hexa-helix approach.</p>
+        <p class="font-bold text-slate-800">Role & Responsibility :</p>
+        <ul class="list-disc pl-4 space-y-1">
+          <li>Conducted nationwide market research across all Indonesian provinces, successfully tracking and consolidating 200+ top-ranking LKS winner datasets (East Java, Central Java, West Java, DIY) within 1 month for PractiClass's core curriculum.</li>
+          <li>Spearheaded end-to-end event operations for 9 ION webinars, 16 MBKM Polinema training sessions, and several collaborative events with Ngalup.co, attracting 1,000+ total cumulative attendees (avg 100+ participants/session of ION) and cross-selling PractiClass e-courses & scholarship programs.</li>
+          <li>Researched and engaged 10+ C-level & industry experts monthly via LinkedIn to draft targeted webinar TORs and secure top-tier speakers.</li>
+          <li>Executed mass WhatsApp blasting and Sendy automated email sequences (H+1 to H+5 workflow) to boost event attendance, lead nurture, and participant retention.</li>
+          <li>Coordinated multi-stakeholder operations for strategic partner programs as MC, Operator, and Facilitator for MBKM Polinema, Startup4industry (Roiloka x Mebiso), Big Data Bootcamp, GESIT/KIAT, and Empower Academy.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== POPUP MODAL SULOTCO ==================== -->
+<div id="modal-sulotco" class="custom-modal fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+  <div class="bg-white w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh] relative">
+    <div class="relative h-56 w-full bg-slate-100 flex-shrink-0">
+      <img src="assets/img/work/sul4.webp" alt="Banner" class="w-full h-full object-cover">
+      <button type="button" class="btn-close-modal absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center text-sm transition-colors z-30">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="p-6 overflow-y-auto">
+      <span class="text-xs font-bold text-brand-600 block mb-1">PT Sulotco Jaya Abadi (Kapal Api Group) | Aug 2024 – Dec 2024</span>
+      <h3 class="text-lg font-bold text-slate-900 mb-3">International Trade & Administrative Intern — PT Sulotco Jaya Abadi</h3>
+      <div class="text-xs text-slate-600 leading-relaxed space-y-3 border-t border-slate-100 pt-3">
+        <p>Coffee cultivation and processing, domestic and international export operations, quality control, export documentation, and cross-departmental administrative coordination to support efficient business operations.</p>
+        <p class="font-bold text-slate-800">Role & Responsibility</p>
+        <ul class="list-disc pl-4 space-y-1">
+          <li>Supported cross-departmental operations, encompassing accounting administration, warehouse and logistics management, as well as sales documentation for domestic and international coffee distribution.</li>
+          <li>Generated 50+ withholding tax certificates (e-Bupot) monthly and reconciled them against source documents to ensure full data accuracy</li>
+          <li>-	Monitored warehouse inventory and logistics operations, including stock opname, pallet arrangement, quality control sampling (moisture testing), and container stuffing activities.</li>
+          <li>-	Managed sales administration and document archiving by retrieving commercial invoices via QAD ERP, compiling monthly sales summaries, and digitizing 100+ physical documents monthly to support internal audit readiness.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== POPUP MODAL P2MD ==================== -->
+<div id="modal-p2md" class="custom-modal fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+  <div class="bg-white w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh] relative">
+    <div class="relative h-56 w-full bg-slate-100 flex-shrink-0">
+      <img src="assets/img/work/p3.webp" alt="Banner" class="w-full h-full object-cover">
+      <button type="button" class="btn-close-modal absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center text-sm transition-colors z-30">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="p-6 overflow-y-auto">
+      <span class="text-xs font-bold text-brand-600 block mb-1">P2MD Kemendikbudristek — Desa Bonto Manai | Aug 2023 – Nov 2023</span>
+      <h3 class="text-lg font-bold text-slate-900 mb-3">Community Empowerment Project Leader — P2MD Kemendikbudristek</h3>
+      <div class="text-xs text-slate-600 leading-relaxed space-y-3 border-t border-slate-100 pt-3">
+        <p>The Village Community Empowerment Program (Program Pemberdayaan Masyarakat Desa/P2MD) is an initiative organized by the Directorate of Academic Affairs for Vocational Higher Education, providing students with the opportunity to submit proposals for village community empowerment projects through a competitive selection process. Proposals that pass the selection process receive funding to implement projects focused on identifying local potential and challenges while strengthening community capacity, self-reliance, and overall well-being.</p>
+        <p class="font-bold text-slate-800">Role & Responsibility :</p>
+        <ul class="list-disc pl-4 space-y-1">
+          <li>Spearheaded product innovation and branding Sikamaseang MSMEs and expanding digital-physical marketing channels.</li>
+          <li>Boosted MSMEs sales volume by 45% through social media marketing campaigns, Canva packaging redesigns, and product diversification workshops.</li>
+          <li>Established strategic local partnerships with BUMDes for financing access, Karang Taruna, and village leaders, while initiating supply chain proposals to regional retail chains.</li>
+          <li>Managed end-to-end project budget and operations, executing 7+ workshops/training sessions and presenting final outcomes in stakeholder workshops.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SCRIPT JAVASCRIPT AMAN & BERSIH -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. Auto-Slideshow 5 Foto (Tetap Berputar Otomatis)
+    const carousels = document.querySelectorAll('.exp-carousel');
+    carousels.forEach(carousel => {
+      const track = carousel.querySelector('.carousel-track');
+      const slides = track ? track.querySelectorAll('img') : [];
+      const dots = carousel.querySelectorAll('.dot');
+      const interval = parseInt(carousel.dataset.interval) || 3500;
+      let currentIndex = 0;
+
+      function updateSlide(index) {
+        if (!track || slides.length === 0) return;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.add('bg-white', 'w-3');
+            dot.classList.remove('bg-white/40', 'w-1.5');
+          } else {
+            dot.classList.add('bg-white/40', 'w-1.5');
+            dot.classList.remove('bg-white', 'w-3');
+          }
+        });
+      }
+
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlide(currentIndex);
+      }, interval);
+    });
+
+    // 2. Filter Kategori Bar
+    const filters = document.querySelectorAll('.port-filter');
+    const cards = document.querySelectorAll('.port-card');
+
+    filters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filters.forEach(f => {
+          f.classList.remove('bg-slate-900', 'text-white', 'active-filter');
+          f.classList.add('bg-slate-100', 'text-slate-600');
+        });
+        btn.classList.remove('bg-slate-100', 'text-slate-600');
+        btn.classList.add('bg-slate-900', 'text-white', 'active-filter');
+
+        const cat = btn.dataset.filter;
+        cards.forEach(card => {
+          if (cat === 'all' || card.dataset.cat === cat) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 3. Logika Buka/Tutup Modal Pop-up (Buka Cuma 1 Modal Bersih)
+    const openBtns = document.querySelectorAll('.btn-open-modal');
+    const closeBtns = document.querySelectorAll('.btn-close-modal');
+    const modals = document.querySelectorAll('.custom-modal');
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.dataset.target;
+        const targetModal = document.getElementById(targetId);
+        if (targetModal) {
+          targetModal.classList.remove('hidden');
+        }
+      });
+    });
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = btn.closest('.custom-modal');
+        if (modal) {
+          modal.classList.add('hidden');
+        }
+      });
+    });
+
+    modals.forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+        }
+      });
+    });
+
+  });
+</script>
+
+
+  
+        <!-- PORTFOLIO SECTION -->
+<!-- PORTFOLIO SECTION (FULL WIDTH TO THE EDGES) -->
+<section id="portfolio" class="py-14 bg-white border-t border-slate-200 w-full">
+  
+  <!-- Header Judul & Filter (Tetap di tengah agar rapi) -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-8">
+      <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">EXPLORE MY WORK</span>
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Portfolio & Practical Projects</h2>
+      <p class="text-xs text-slate-500 mt-1">Select a category below to filter the showcase.</p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+      <button class="port-filter active-filter px-4 py-1.5 rounded-xl text-xs font-bold bg-slate-900 text-white transition-all active:scale-95" data-filter="all">Semua Proyek</button>
+      <button class="port-filter px-4 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all active:scale-95" data-filter="excel">Excel & Data Processing</button>
+      <button class="port-filter px-4 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all active:scale-95" data-filter="event">Event Management & Operations</button>
+      <button class="port-filter px-4 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all active:scale-95" data-filter="branding">Digital Branding</button>
+    </div>
+  </div>
+<!-- Style Tambahan untuk Animasi Interaktif Pas Masuk -->
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-card {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+</style>
+<!-- Style Animasi & Grid Fix -->
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-card {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+</style>
+
+<!-- CONTAINER FULL WIDTH -->
+<div class="w-full px-4 sm:px-6 lg:px-8">
+  
+  <!-- Grid Pas 5 Kolom per Baris -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 sm:gap-5 w-full">
+
+    <!-- Item 1 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 50ms;" data-cat="branding">
+      <img src="assets/img/portfolio/p2.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Kartini Milkfish Rebranding Strategy">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Branding product</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Kartini Milkfish Rebranding Strategy</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=1" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 100ms;" data-cat="branding">
+      <img src="assets/img/portfolio/RB1.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Social Media Campaign Strategy">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Digital Branding</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Sosmed Campagin & Content Strategy</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition" title="Lihat Preview">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=13" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm" title="Lihat Detail Proyek">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 150ms;" data-cat="event">
+      <img src="assets/img/portfolio/ex1.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Social Media Campaign Strategy">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Event Management & Operations</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2"> Expo KWU & Bazar 2025 </h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition" title="Lihat Preview">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=14" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm" title="Lihat Detail Proyek">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 200ms;" data-cat="event">
+      <img src="assets/img/portfolio/mak.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Social Media Campaign Strategy">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Event Management & Operations</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Makrab Abi 2026 </h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition" title="Lihat Preview">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=15" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm" title="Lihat Detail Proyek">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 250ms;" data-cat="excel">
+      <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Interview Reminder Management">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Excel & Data Processing</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Recruitment Interview Reminder Automation</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition" title="Lihat Preview">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=12" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm" title="Lihat Detail Proyek">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 300ms;" data-cat="excel">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Inventory Control Dashboard">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Excel & Data Processing</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Inventory Control Dashboard</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition" title="Lihat Preview">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=11" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm" title="Lihat Detail Proyek">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 7 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 350ms;" data-cat="excel">
+      <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Employee Payroll System">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Excel & Data Processing</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Payslip Generator System</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition" title="Lihat Preview">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=10" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm" title="Lihat Detail Proyek">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 8 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 400ms;" data-cat="event">
+      <img src="assets/img/portfolio/ion.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Ion Corner Series">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Event Management & Operations</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Insights on Ngalup / Ion Corner </h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=2" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 9 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 450ms;" data-cat="event">
+      <img src="assets/img/portfolio/jti.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="MBKM Entrepreneurship Polinema">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Event Management & Operations</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">MBKM Entrepreneurship JTI Polinema</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=4" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>          
+        </div>
+      </div>
+    </div> 
+
+    <!-- Item 10 -->
+    <div class="port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 500ms;" data-cat="event">
+      <img src="assets/img/portfolio/s1.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Startup4industry Roiloka Mebiso">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Event Management & Operations</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Startup4industry – Roiloka x Mebiso</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=6" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM EKSTRA (DISEMBUNYIKAN DULU: Item 11, 12, 13) -->
+
+    <!-- Item 11 (Hidden) -->
+    <div class="hidden extra-project port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 100ms;" data-cat="event">
+      <img src="assets/img/portfolio/pr.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Practiclass IT Cyber Security">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Administrative Support</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Practiclass</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=5" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 12 (Hidden) -->
+    <div class="hidden extra-project port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 150ms;" data-cat="event">
+      <img src="assets/img/portfolio/pol.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Big Data Youth Bootcamp">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Event Operation</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Big Data Bootcamp Poltekad</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=7" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 13 (Hidden) -->
+    <div class="hidden extra-project port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 200ms;" data-cat="event">
+      <img src="assets/img/portfolio/k.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="GESIT KIAT Ngalup">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Administrative Support</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">GESIT by KIAT</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=8" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 14 (Hidden) -->
+    <div class="hidden extra-project port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 200ms;" data-cat="event">
+      <img src="assets/img/portfolio/emp.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Empower Academy Bentoel Group">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Administrative Support</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">Empower Academy – Bentoel x Ngalup</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=3" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 15 (Hidden) -->
+    <div class="hidden extra-project port-card animate-card flex flex-col justify-between bg-slate-900 rounded-2xl overflow-hidden shadow-md group relative aspect-[4/3] w-full hover:-translate-y-1.5 transition-all duration-300" style="animation-delay: 200ms;" data-cat="event">
+      <img src="assets/img/portfolio/5th.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Korea-ASEAN BMC SDGs 2024">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-amber-400 font-extrabold text-[10px] uppercase tracking-wider mb-1">Administrative Support</span>
+        <h3 class="text-white font-extrabold text-xs mb-2 line-clamp-2">5th Korea-ASEAN BMC SDGs 2024</h3>
+        <div class="flex gap-2">
+          <a href="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800" target="_blank" class="w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-xl flex items-center justify-center transition">
+            <i class="bi bi-arrows-angle-expand text-xs"></i>
+          </a>
+          <a href="portfolio-details.html?id=9" class="w-8 h-8 bg-brand-600 hover:bg-brand-700 text-white rounded-xl flex items-center justify-center transition shadow-sm">
+            <i class="bi bi-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Tombol Load More (Aktif Tampilkan Item yang Disembunyikan) -->
+  <div class="w-full flex justify-center mt-10 mb-16">
+    <button id="btn-load-more" onclick="toggleProjects()" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold rounded-2xl border border-slate-800 shadow-sm transition-all duration-300 hover:scale-105 cursor-pointer">
+      <span id="btn-text">Lihat Semua Proyek</span>
+      <i id="btn-icon" class="bi bi-arrow-down-short text-base transition-transform duration-300"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Script Pembuka Item -->
+<script>
+  function toggleProjects() {
+    const extras = document.querySelectorAll('.extra-project');
+    const btnText = document.getElementById('btn-text');
+    const btnIcon = document.getElementById('btn-icon');
+    
+    extras.forEach(item => {
+      item.classList.toggle('hidden');
+    });
+
+    if (extras[0].classList.contains('hidden')) {
+      btnText.textContent = 'Lihat Semua Proyek';
+      btnIcon.classList.remove('rotate-180');
+    } else {
+      btnText.textContent = 'Sembunyikan Sebagian';
+      btnIcon.classList.add('rotate-180');
+    }
+  }
+</script>
+<!-- Style Kustom Marquee & Modal -->
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+  }
+  .animate-marquee:hover {
+    animation-play-state: paused; /* Pause pas kursor di-hover */
+  }
+</style>
+
+<!-- ACHIEVEMENT SECTION (BACKGROUND ABU-ABU & BERJALAN OTOMATIS) -->
+<section id="achievements" class="py-10 bg-slate-100 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
+    
+    <!-- Bagian Header & Tombol di Tengah, Jarak Dekat -->
+    <div class="text-center max-w-2xl mx-auto flex flex-col items-center">
+      <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Achievements </span>
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Certifications & Awards</h2>
+      <p class="text-xs text-slate-500 mt-1 mb-3">Click on a certificate to view the full document.</p>
+      
+      <!-- Tombol Navigasi Geser Kiri / Kanan di Tengah -->
+      <div class="flex items-center gap-2">
+        <button onclick="scrollSlider('left')" class="w-9 h-9 rounded-full bg-white border border-slate-300 hover:bg-amber-500 hover:text-white hover:border-amber-500 text-slate-700 flex items-center justify-center shadow-sm transition-all duration-300 cursor-pointer">
+          <i class="bi bi-chevron-left text-xs"></i>
+        </button>
+        <button onclick="scrollSlider('right')" class="w-9 h-9 rounded-full bg-white border border-slate-300 hover:bg-amber-500 hover:text-white hover:border-amber-500 text-slate-700 flex items-center justify-center shadow-sm transition-all duration-300 cursor-pointer">
+          <i class="bi bi-chevron-right text-xs"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Container Slider Berjalan Mengalir Otomatis (Marquee) -->
+  <div class="relative w-full overflow-hidden flex">
+    <!-- Gradient Fade Kiri-Kanan -->
+    <div class="absolute left-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-r from-slate-100 to-transparent z-10 pointer-events-none"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-l from-slate-100 to-transparent z-10 pointer-events-none"></div>
+
+    <!-- Track Berjalan Mengalir -->
+    <div class="flex gap-5 py-3 animate-marquee hover:[animation-play-state:paused]">
+
+      <!-- Sertifikat 1 -->
+      <div onclick="openCertModal('assets/sertifikat/adm.pdf', 'Executive Administrative Asisstant')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/adm.webp" alt="Executive Administrative Asisstant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-amber-500/90 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Certifications
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+            📄 PDF
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Executive Administrative Asisstant</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Indonesian Professional Certification Authority</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 2 -->
+      <div onclick="openImageModal('assets/sertifikat/gal/avi2.webp', 'Silver Medals AVISOC')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/avi2.webp" alt="Silver medals AVISOC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-blue-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Awardee
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Silver Medals</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">ASEAN Virtual International Competition</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 3 -->
+      <div onclick="openImageModal('assets/sertifikat/gal/isc.webp', 'Certificate of Participation')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/isc.webp" alt="Certificate of Participation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-red-600/90 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+           Certificate
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Certificate of Participation</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">International Student Confrence</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 4 -->
+      <div onclick="openImageModal('assets/sertifikat/gal/cbpc.webp', 'Semifinalist Business Competition')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/cbpc.webp" alt="Semifinalist Business Competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-blue-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Awardee
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Semifinalist Business Competition</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Student Executive Board, Faculty of Mathematics and Natural Sciences, Surabaya University</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 5 -->
+      <div onclick="openCertModal('assets/sertifikat/p2mm.pdf', 'Village Community Empowerment Program')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/p2md.webp" alt="Village Community Empowerment Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-blue-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Awardee
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Village Community Empowerment Program</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Ministry of Education, Culture, Research, and Technology (Kemendikbudristek)</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 6 -->
+      <div onclick="openCertModal('assets/sertifikat/visual.pdf', 'Basics of Data Visualization')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/visual.webp" alt="Basics of Data Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emerald-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            e-course
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Basics of Data Visualization</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">dicoding Academy</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 7 -->
+      <div onclick="openCertModal('assets/sertifikat/git1.pdf', 'Git Fundamentals for New Programmers')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/git1.webp" alt="Git Fundamentals for New Programmers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emerald-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            e-course
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Git Fundamentals for New Programmers</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Gamelab Indonesia</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 8 -->
+      <div onclick="openCertModal('assets/sertifikat/web.pdf', 'Web Development Fundamentals')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/web.webp" alt="Web Development Fundamentals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emerald-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            e-course
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Web Development Fundamentals</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">dicoding Academy</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 9 -->
+      <div onclick="openImageModal('assets/sertifikat/gal/avi1.webp', 'Certificate of Participation')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/avi1.webp" alt="Certificate of Participation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-red-600/90 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Certificate
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Certificate of Participation</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">ASEAN Virtual International Student Competition 2022 </p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 10 -->
+      <div onclick="openImageModal('assets/sertifikat/gal/copy.webp', 'Powerful Copywriting')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/copy.webp" alt="Powerfull Copywriting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-red-600/90 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Certificate
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Powerfull Copywriting</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Hayyu Academy </p>
+        </div>
+      </div>
+
+      <!-- ================= DUPLIKASI AGAR JALANNYA MENGALIR MULUS TANPA PUTUS ================= -->
+      <!-- Salinan Sertifikat 1 -->
+      <div onclick="openCertModal('assets/sertifikat/adm.pdf', 'Executive Administrative Assistant')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/adm.webp" alt="Sertifikat P2MD Kemendikbudristek" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-amber-500/90 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Certifications
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+            📄 PDF
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open PDF
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Executive Administrative Asisstant</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Indonesian Professional Certification Authority</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 2 (Bentuk Gambar / Image) -->
+      <div onclick="openImageModal('assets/sertifikat/gal/avi2.webp', 'Silver Medals AVISOC')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/avi2.webp" alt="Silver medals AVISOC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-blue-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Awardee
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Silver Medals</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">ASEAN Virtual International Competition</p>
+        </div>
+      </div>
+        <!-- Sertifikat 3 (Bentuk Gambar / Image) -->
+      <div onclick="openImageModal('assets/sertifikat/gal/isc.webp', 'Certificate of Participation')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/isc.webp" alt="Certificate of Participation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-red-600/90 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+           Certificate
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Certificate of Participation</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">International Student Confrence</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 4 -->
+      <div onclick="openImageModal('assets/sertifikat/gal/cbpc.webp', 'Semifinalist Business Competition')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/cbpc.webp" alt="Semifinalist Business Competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-blue-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Awardee
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Semifinalist Business Competition</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Student Executive Board, Faculty of Mathematics and Natural Sciences, Surabaya University</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 5 -->
+      <div onclick="openCertModal('assets/sertifikat/p2mm.pdf', 'Village Community Empowerment Program')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/p2md.webp" alt="Village Community Empowerment Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-blue-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Awardee
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Village Community Empowerment Program</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Ministry of Education, Culture, Research, and Technology (Kemendikbudristek)</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 6 -->
+      <div onclick="openCertModal('assets/sertifikat/visual.pdf', 'Basics of Data Visualization')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/visual.webp" alt="Basics of Data Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emerald-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            e-course
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Basics of Data Visualization</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">dicoding Academy</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 7 -->
+      <div onclick="openCertModal('assets/sertifikat/git1.pdf', 'Git Fundamentals for New Programmers')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/git1.webp" alt="Git Fundamentals for New Programmers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emerald-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            e-course
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Git Fundamentals for New Programmers</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Gamelab Indonesia</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 8 -->
+      <div onclick="openCertModal('assets/sertifikat/web.pdf', 'Web Development Fundamentals')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/web.webp" alt="Web Development Fundamentals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emerald-600 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            e-course
+          </span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-file-earmark-pdf text-xs"></i> Open Pdf
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Web Development Fundamentals</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">dicoding Academy</p>
+        </div>
+      </div>
+
+      <!-- Sertifikat 9 -->
+      <div onclick="openImageModal('assets/sertifikat/gal/avi1.webp', 'Certificate of Participation')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/avi1.webp" alt="Certificate of Participation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-red-600/90 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Certificate
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Certificate of Participation</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">ASEAN Virtual International Student Competition 2022 </p>
+        </div>
+      </div>
+
+        
+      <!-- Sertifikat 10 -->
+      <div onclick="openImageModal('assets/sertifikat/gal/copy.webp', 'Powerful Copywriting')" class="w-72 sm:w-80 flex-none bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+          <img src="assets/sertifikat/gal/copy.webp" alt="Powerfull Copywriting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-red-600/90 backdrop-blur-md text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+            Certificate
+          </span>
+          
+          <!-- Badge diubah jadi Image -->
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-slate-900/70 backdrop-blur-md text-white text-[10px] font-bold shadow-sm">
+          </span>
+          
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 bg-white/90 rounded-xl text-slate-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+              <i class="bi bi-eye text-xs"></i> View
+            </span>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-800 line-clamp-1">Powerfull Copywriting</h3>
+          <p class="text-[11px] text-slate-500 mt-0.5">Hayyu Academy </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- POP-UP MODAL LIGHTBOX SERTIFIKAT -->
+<div id="certModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+  <div class="relative max-w-4xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-100 animate-card">
+    <div class="p-4 px-6 bg-slate-50 border-b border-slate-100 flex justify-between items-center">
+      <h4 id="certModalTitle" class="text-sm font-extrabold text-slate-800">Preview Sertifikat</h4>
+      <button onclick="closeCertModal()" class="w-8 h-8 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-700 flex items-center justify-center transition">
+        <i class="bi bi-x-lg text-xs"></i>
+      </button>
+    </div>
+    <div class="p-3 bg-slate-100 flex justify-center items-center h-[75vh]">
+      <div id="certModalContainer" class="w-full h-full"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS ANIMASI MARQUEE & PENGATUR GESER TOMBOL -->
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 45s linear infinite;
+  }
+</style>
+
+<!-- SCRIPT JAVASCRIPT -->
+<!-- SCRIPT JAVASCRIPT (PERBAIKAN TOMBOL PANAH) -->
+<script>
+  // Fungsi Tombol Geser Slider Kiri / Kanan
+  function scrollSlider(direction) {
+    const track = document.querySelector('.animate-marquee');
+    if (!track) return;
+    
+    // Ukuran geser sekali klik (lebar card + gap, sekitar 320px)
+    const scrollAmount = 320; 
+    
+    // Ambil posisi geser saat ini dari parent container-nya
+    const container = track.parentElement;
+    
+    if (direction === 'right') {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    }
+  }
+
+  // / 1. Fungsi untuk membuka sertifikat berformat PDF
+  function openCertModal(pdfUrl, title) {
+    const modal = document.getElementById('certModal');
+    const modalTitle = document.getElementById('certModalTitle');
+    const modalContainer = document.getElementById('certModalContainer');
+    
+    modalTitle.textContent = title;
+    modalContainer.innerHTML = `
+      <embed src="${pdfUrl}#toolbar=0" type="application/pdf" class="w-full h-full rounded-xl border border-slate-200 shadow-inner" />
+    `;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; 
+  }
+
+  // 2. Fungsi BARU untuk membuka sertifikat berformat Gambar (Image)
+  function openImageModal(imgSrc, title) {
+    const modal = document.getElementById('certModal');
+    const modalTitle = document.getElementById('certModalTitle');
+    const modalContainer = document.getElementById('certModalContainer');
+    
+    modalTitle.textContent = title;
+    modalContainer.innerHTML = `
+      <div class="w-full h-full flex items-center justify-center">
+        <img src="${imgSrc}" alt="${title}" class="max-w-full max-h-[70vh] object-contain rounded-xl shadow-md" />
+      </div>
+    `;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; 
+  }
+
+  // Fungsi untuk Menutup Modal
+  function closeCertModal() {
+    const modal = document.getElementById('certModal');
+    modal.classList.add('hidden');
+    document.getElementById('certModalContainer').innerHTML = '';
+    document.body.style.overflow = 'auto'; 
+  }
+
+  // Tutup modal jika klik area luar pop-up
+  document.getElementById('certModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeCertModal();
+    }
+  });
+</script>
+</section>
+  <main>
+    <!-- EXECUTIVE CONTACT HUB & DIRECT MESSAGING -->
+    <section id="contact" class="py-14 bg-slate-950 text-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold text-amberAccent-500 uppercase tracking-widest">Let's Connect</span>
+          <h2 class="text-2xl font-extrabold text-white mt-1">Direct Communication Channels</h2>
+          <p class="text-xs text-slate-400 mt-1">Click the copy button below or drop a quick message.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-4xl mx-auto">
+          
+          <!-- Contact Cards -->
+          <div class="lg:col-span-5 space-y-3">
+            
+            <a href="mailto:hidayanabila99@gmail.com" class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between text-decoration-none block hover:border-brand-500 transition-colors group">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-brand-400 text-base"></i>
+                <div class="overflow-hidden">
+                  <span class="text-[9px] font-bold text-slate-400 uppercase block">Email</span>
+                  <span class="text-xs font-bold text-white truncate block">hidayanabila99@gmail.com</span>
+                </div>
+              </div>
+              
+              <div class="flex items-center gap-2">
+                <!-- Tombol Salin (Opsional, dibiarkan agar tetap bisa copy teks) -->
+                
+                <i class="bi bi-arrow-up-right text-slate-400 text-xs"></i>
+              </div>
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/nabila-hidayatul-amalia-6859a8272/" target="_blank" class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between text-decoration-none block hover:border-brand-500 transition-colors">
+              <div class="flex items-center gap-3">
+                <i class="fa-brands fa-linkedin-in text-indigo-400 text-base"></i>
+                <div>
+                  <span class="text-[9px] font-bold text-slate-400 uppercase block">LinkedIn Profile</span>
+                  <span class="text-xs font-bold text-white block">Nabila Hidayatul Amalia</span>
+                </div>
+              </div>
+              <i class="bi bi-arrow-up-right text-slate-400 text-xs"></i>
+            </a>
+
+          </div>
+
+          <!-- Quick WhatsApp Form -->
+          <div class="lg:col-span-7 bg-slate-900 p-5 rounded-xl border border-slate-800">
+            <form id="waDirectForm" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Your Name</label>
+                  <input type="text" id="waName" required placeholder="Contoh: Mr. Adam" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-500">
+                </div>
+                <div>
+                  <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Company</label>
+                  <input type="text" id="waCompany" placeholder="Contoh: PT Industri Nusantara" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Text Message</label>
+                <textarea id="waMessage" rows="2" required placeholder=" Project Collaboration..." class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-2.5 rounded-lg bg-brand-600 hover:bg-brand-700 active:scale-95 text-white font-bold text-xs shadow-md transition-all flex items-center justify-center gap-1.5">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Send & Open WhatsApp
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-600 py-6 border-t border-slate-900 text-[11px]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div>
+        <strong class="text-slate-300">Nabila Hidayatul Amalia</strong> •  Web Portfolio
+      </div>
+      <p>© All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK WHATSAPP BUTTON -->
+  <div class="fixed bottom-5 right-5 z-50">
+    <a href="https://wa.me/6281242845430?text=Hello%20Nabila,%20Im%20interested%20in%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20career%20opportunity." 
+       target="_blank" 
+       class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xl shadow-lg hover:bg-emerald-600 active:scale-90 transition-all text-decoration-none animate-pulse-subtle">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- LIGHTBOX GALLERY MODAL -->
+  <div id="galleryModal" class="fixed inset-0 z-[110] hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white max-w-xl w-full rounded-2xl p-5 border border-slate-200 shadow-2xl relative">
+      <button id="closeGalleryModal" class="absolute top-3 right-3 text-slate-400 hover:text-slate-700 text-lg">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <h3 class="text-base font-bold text-slate-900 mb-1">Documentation</h3>
+      <p class="text-xs text-slate-500 mb-3">Select the image to view.</p>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-72 overflow-y-auto p-1" id="galleryGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT LIGHTBOX MODAL -->
+  <div id="projectModal" class="fixed inset-0 z-[110] hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white max-w-lg w-full rounded-2xl p-5 border border-slate-200 shadow-2xl relative">
+      <button id="closeProjectModal" class="absolute top-3 right-3 text-slate-400 hover:text-slate-700 text-lg">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <img id="projModalImg" src="" class="w-full h-48 object-cover rounded-xl mb-3" alt="Project Detail">
+      <h3 class="text-base font-bold text-slate-900" id="projModalTitle"></h3>
+      <p class="text-xs text-slate-600 mt-1.5 leading-relaxed" id="projModalDesc"></p>
+      <div class="mt-4 pt-3 border-t border-slate-100 flex justify-end">
+        <button id="projModalCloseBtn" class="px-4 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-bold active:scale-95 transition-transform">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // 1. SCROLL PROGRESS
+      window.addEventListener('scroll', function() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('scrollProgress').style.width = scrolled + '%';
+      });
+
+      // 2. TOUCH RIPPLE FEEDBACK ON CARDS & BUTTONS
+      document.querySelectorAll('.touch-card, button, .nav-btn').forEach(elem => {
+        elem.addEventListener('click', function(e) {
+          const rect = this.getBoundingClientRect();
+          const ripple = document.createElement('span');
+          ripple.className = 'ripple-effect';
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.width = ripple.style.height = size + 'px';
+          ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
+          ripple.style.top = (e.clientY - rect.top - size/2) + 'px';
+          this.appendChild(ripple);
+
+          setTimeout(() => ripple.remove(), 600);
+        });
+      });
+
+      // 3. TOAST NOTIFICATION GENERATOR
+      function showToast(msg) {
+        const container = document.getElementById('toastContainer');
+        const toast = document.createElement('div');
+        toast.className = 'pointer-events-auto bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-xl border border-slate-700 flex items-center gap-2 transform transition-all duration-300 translate-y-2 opacity-0';
+        toast.innerHTML = `<i class="bi bi-info-circle-fill text-brand-400"></i> ${msg}`;
+        container.appendChild(toast);
+
+        setTimeout(() => {
+          toast.classList.remove('translate-y-2', 'opacity-0');
+        }, 10);
+
+        setTimeout(() => {
+          toast.classList.add('opacity-0', '-translate-y-2');
+          setTimeout(() => toast.remove(), 300);
+        }, 2500);
+      }
+
+      document.querySelectorAll('[data-toast]').forEach(btn => {
+        btn.addEventListener('click', function() {
+          showToast(this.getAttribute('data-toast'));
+        });
+      });
+
+      // 4. TYPED ROLES SWITCHER
+      const roles = [
+        "Business Administration Specialist",
+        "Export & Operations Coordinator",
+        "Event & Community Host / MC",
+        "Data & Logistics Administrator"
+      ];
+      let roleIdx = 0;
+      const typedRolesElem = document.getElementById('typedRoles');
+
+      setInterval(() => {
+        roleIdx = (roleIdx + 1) % roles.length;
+        typedRolesElem.style.opacity = '0';
+        setTimeout(() => {
+          typedRolesElem.textContent = roles[roleIdx];
+          typedRolesElem.style.opacity = '1';
+        }, 300);
+      }, 3500);
+
+      // 5. STAT COUNTER ANIMATION
+      const counters = document.querySelectorAll('.counter');
+      let counterDone = false;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !counterDone) {
+            counterDone = true;
+            counters.forEach(counter => {
+              const target = +counter.getAttribute('data-target');
+              let c = 0;
+              const step = Math.max(1, target / 25);
+              const timer = setInterval(() => {
+                c += step;
+                if (c >= target) {
+                  counter.textContent = target;
+                  clearInterval(timer);
+                } else {
+                  counter.textContent = Math.ceil(c);
+                }
+              }, 40);
+            });
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counters.forEach(c => observer.observe(c));
+
+      // 6. GALLERY DATA & MODAL
+      const expGalleries = [
+        [
+          "https://storage.tongkolspace.com/toraja-coffee/uploads/2024/05/IMG-20240510-WA0009.jpg",
+          "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=600",
+          "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600",
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600",
+          "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600"
+        ],
+        [
+          "https://adadimalang.com/wp-content/uploads/2021/03/20210316_141834_0000_compress34.jpg",
+          "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=600",
+          "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=600",
+          "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=600",
+          "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600"
+        ],
+        [
+          "https://polipangkep.ac.id/wp-content/uploads/2023/12/tim-p2md-polipangkep-tingkatkan-nilai-jual-ikan-bandeng-desa-bonto-manai-yuh.jpg",
+          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600",
+          "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=600",
+          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600",
+          "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600"
+        ]
+      ];
+
+      const galleryModal = document.getElementById('galleryModal');
+      const galleryGrid = document.getElementById('galleryGrid');
+
+      document.querySelectorAll('.open-exp-drawer').forEach(card => {
+        card.addEventListener('click', function() {
+          const idx = this.getAttribute('data-exp');
+          const imgs = expGalleries[idx];
+          galleryGrid.innerHTML = imgs.map(url => `
+            <img src="${url}" class="w-full h-20 object-cover rounded-lg border border-slate-200 active:scale-95 transition-transform cursor-pointer" onclick="window.open('${url}', '_blank')">
+          `).join('');
+          galleryModal.classList.remove('hidden');
+        });
+      });
+
+      document.getElementById('closeGalleryModal').addEventListener('click', () => galleryModal.classList.add('hidden'));
+
+      // 7. PORTFOLIO CATEGORY FILTER
+      const portFilters = document.querySelectorAll('.port-filter');
+      const portCards = document.querySelectorAll('.port-card');
+
+      portFilters.forEach(btn => {
+        btn.addEventListener('click', function() {
+          portFilters.forEach(b => {
+            b.classList.remove('bg-slate-900', 'text-white');
+            b.classList.add('bg-slate-100', 'text-slate-600');
+          });
+
+          this.classList.remove('bg-slate-100', 'text-slate-600');
+          this.classList.add('bg-slate-900', 'text-white');
+
+          const cat = this.getAttribute('data-filter');
+          portCards.forEach(card => {
+            if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 8. PROJECT MODAL
+      const projectModal = document.getElementById('projectModal');
+      const projModalImg = document.getElementById('projModalImg');
+      const projModalTitle = document.getElementById('projModalTitle');
+      const projModalDesc = document.getElementById('projModalDesc');
+
+      document.querySelectorAll('.open-proj-modal').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          projModalImg.src = this.getAttribute('data-img');
+          projModalTitle.textContent = this.getAttribute('data-title');
+          projModalDesc.textContent = this.getAttribute('data-desc');
+          projectModal.classList.remove('hidden');
+        });
+      });
+
+      document.getElementById('closeProjectModal').addEventListener('click', () => projectModal.classList.add('hidden'));
+      document.getElementById('projModalCloseBtn').addEventListener('click', () => projectModal.classList.add('hidden'));
+
+      // 9. COPY TO CLIPBOARD
+      document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const val = this.getAttribute('data-copy');
+          const temp = document.createElement('input');
+          temp.value = val;
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand('copy');
+          document.body.removeChild(temp);
+
+          showToast(`Tersalin: ${val}`);
+        });
+      });
+
+      // 10. DIRECT WHATSAPP FORM
+      document.getElementById('waDirectForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('waName').value;
+        const company = document.getElementById('waCompany').value;
+        const msg = document.getElementById('waMessage').value;
+
+        const waText = `Halo Nabila,%0A%0AI'm ${encodeURIComponent(name)} From ${encodeURIComponent(company)}.%0A%0A${encodeURIComponent(msg)}`;
+        window.open(`https://wa.me/6281242845430?text=${waText}`, '_blank');
+      });
+
+      // 11. MOBILE MENU
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+    });
+  </script>
+</body>
+
+</html>
